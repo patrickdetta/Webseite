@@ -1,0 +1,1842 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patrick Detta | 12kg in 10 Wochen abnehmen als Unternehmer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Phudu:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://fast.wistia.com/player.js" async></script>
+<style>
+:root{
+    --red:#E84C3D;--red-hover:#D4402F;--red-glow:rgba(232,76,61,.15);
+    --teal:#2DD4BF;--teal-glow:rgba(45,212,191,.12);
+    --bg:#0A0A0A;--bg-card:#151515;--bg-card-hover:#1a1a1a;--bg-elevated:#1e1e1e;
+    --border:rgba(255,255,255,.06);--border-hover:rgba(255,255,255,.1);
+    --white:#fff;--gray-100:#f3f4f6;--gray-300:#d1d5db;--gray-400:#9ca3af;--gray-500:#6b7280;--gray-600:#4b5563;--gray-800:#1f1f1f;
+    --font-display:'Phudu',cursive;--font-body:'Inter',sans-serif;
+    --radius:12px;--radius-lg:20px;--radius-xl:28px;
+    --ease:cubic-bezier(.4,0,.2,1);
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);background:var(--bg);color:var(--gray-400);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit;transition:.3s var(--ease)}
+ul{list-style:none}
+.container{max-width:1360px;margin:0 auto;padding:0 3rem}
+.section{padding:5rem 0}
+.section-label{font-family:var(--font-display);font-size:.85rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:.75rem}
+.section-title{font-family:var(--font-display);font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;line-height:1.1;color:var(--white);margin-bottom:1rem}
+.section-title em{font-style:normal;color:var(--red)}
+.section-desc{font-size:1rem;color:var(--gray-400);max-width:560px;line-height:1.7}
+.text-center{text-align:center}
+.mx-auto{margin-left:auto;margin-right:auto}
+
+/* ── LIGHT SECTIONS ── */
+.section--light{background:var(--white);color:#374151}
+.section--light .section-title{color:#111827}
+.section--light .section-desc{color:#6b7280}
+.section--light .section-label{color:var(--red)}
+
+/* Light problem cards */
+.section--light .problem-card{background:var(--gray-100);border-color:rgba(0,0,0,.06)}
+.section--light .problem-card:hover{background:#e5e7eb;border-color:rgba(0,0,0,.1)}
+.section--light .problem-card__title{color:#111827}
+.section--light .problem-card__text{color:#6b7280}
+
+/* Light compare */
+.section--light .compare__col--bad{background:var(--gray-100);border-color:rgba(0,0,0,.06)}
+.section--light .compare__col--good{background:linear-gradient(135deg,rgba(232,76,61,.04),rgba(45,212,191,.03));border-color:rgba(232,76,61,.12)}
+.section--light .compare__heading{color:#111827}
+.section--light .compare__col--good .compare__heading,.section--light .compare__heading--good{color:#111827}
+.section--light .compare__item{color:#6b7280}
+
+/* Light testimonials */
+.section--light .testi-card{background:var(--gray-100);border-color:rgba(0,0,0,.06)}
+.section--light .testi-card:hover{border-color:rgba(0,0,0,.1);box-shadow:0 8px 30px rgba(0,0,0,.06)}
+.section--light .testi-card__quote{color:rgba(232,76,61,.08)}
+.section--light .testi-card__result{background:rgba(232,76,61,.06);border-color:rgba(232,76,61,.1)}
+.section--light .testi-card__text{color:#374151}
+.section--light .testi-card__author{border-top-color:rgba(0,0,0,.08)}
+.section--light .testi-card__avatar{background:#e5e7eb;border-color:rgba(0,0,0,.06);color:#6b7280}
+.section--light .testi-card__name{color:#111827}
+.section--light .testi-card__role{color:#9ca3af}
+
+/* Light videos / reviews */
+.section--light .review-badge{background:var(--gray-100);border-color:rgba(0,0,0,.06)}
+.section--light .review-badge:hover{border-color:rgba(0,0,0,.1)}
+.section--light .review-badge__score{color:#111827}
+.section--light .review-badge__text{color:#6b7280}
+.section--light .review-badge__text strong{color:#111827}
+
+/* Light FAQ */
+.section--light .faq-item{background:var(--gray-100);border-color:rgba(0,0,0,.06)}
+.section--light .faq-item.active{border-color:rgba(232,76,61,.2)}
+.section--light .faq-item__q{color:#111827;background:transparent}
+.section--light .faq-item__q:hover{background:rgba(0,0,0,.02)}
+.section--light .faq-item__icon{color:#9ca3af}
+.section--light .faq-item.active .faq-item__icon{color:var(--red)}
+.section--light .faq-item__a p{color:#6b7280}
+
+/* Light ghost button override */
+.section--light .btn--ghost{color:#111827;border-color:rgba(0,0,0,.15)}
+.section--light .btn--ghost:hover{border-color:var(--red);color:var(--red)}
+
+/* Light video cards */
+.section--light .video-card{background:var(--gray-100);border-color:rgba(0,0,0,.06)}
+.section--light .video-card:hover{border-color:rgba(0,0,0,.12)}
+.section--light .video-card__placeholder{color:rgba(0,0,0,.08)}
+
+/* Light process steps */
+.section--light .process-step{background:var(--gray-100);border-color:rgba(0,0,0,.06)}
+.section--light .process-step:hover{border-color:rgba(0,0,0,.1)}
+.section--light .process-step__num{color:var(--red);opacity:.2}
+.section--light .process-step__title{color:#111827}
+.section--light .process-step__desc{color:#6b7280}
+.section--light .process-step__feat{color:#374151}
+.section--light .process-step__visual{background:#e5e7eb;border-color:rgba(0,0,0,.06);color:rgba(0,0,0,.12)}
+
+/* Light about section */
+.section--light .about__image{background:var(--gray-100);border-color:rgba(0,0,0,.06);color:rgba(0,0,0,.12)}
+.section--light .about__stats{border-top-color:rgba(0,0,0,.08)}
+.section--light .about__stat-label{color:#9ca3af}
+.section--light p{color:#6b7280}
+
+/* Light step cards */
+.section--light .step-card{background:var(--gray-100);border-color:rgba(0,0,0,.06)}
+.section--light .step-card:hover{border-color:rgba(0,0,0,.1)}
+.section--light .step-card__title{color:#111827}
+.section--light .step-card__text{color:#6b7280}
+
+/* ── PHOTO IMAGE PLACEHOLDERS ── */
+.photo-block{position:relative;border-radius:var(--radius-xl);overflow:hidden;aspect-ratio:16/9}
+.photo-block--tall{aspect-ratio:3/4}
+.photo-block__bg{position:absolute;inset:0;background:linear-gradient(135deg,#1a1a1a 0%,#252525 100%);display:flex;align-items:center;justify-content:center}
+.section--light .photo-block__bg{background:linear-gradient(135deg,#e5e7eb 0%,#d1d5db 100%)}
+.photo-block__label{font-size:.7rem;color:rgba(255,255,255,.15);letter-spacing:1px;text-transform:uppercase;border:1px dashed rgba(255,255,255,.1);padding:.5rem 1.2rem;border-radius:8px}
+.section--light .photo-block__label{color:rgba(0,0,0,.2);border-color:rgba(0,0,0,.1)}
+.photo-block__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5) 0%,transparent 40%)}
+/* Roter Eck-Fade — oben-rechts und unten-links */
+.photo-block__overlay::before{content:'';position:absolute;top:-20%;right:-20%;width:60%;height:60%;background:radial-gradient(ellipse at center,rgba(232,76,61,.35) 0%,transparent 70%);pointer-events:none}
+.photo-block__overlay::after{content:'';position:absolute;bottom:-20%;left:-20%;width:60%;height:60%;background:radial-gradient(ellipse at center,rgba(232,76,61,.25) 0%,transparent 70%);pointer-events:none}
+.photo-block__caption{position:absolute;bottom:1rem;left:1.25rem;font-size:.8rem;font-weight:600;color:rgba(255,255,255,.7)}
+
+/* ── BUTTONS ── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;font-family:var(--font-display);font-size:1.05rem;font-weight:700;letter-spacing:.5px;padding:1rem 2.4rem;border:none;border-radius:var(--radius);cursor:pointer;transition:.3s var(--ease);line-height:1}
+.btn--red{background:var(--red);color:var(--white);box-shadow:0 0 40px var(--red-glow)}
+.btn--red:hover{background:var(--red-hover);box-shadow:0 0 60px rgba(232,76,61,.25);transform:translateY(-2px)}
+.btn--ghost{background:transparent;color:var(--white);border:1px solid var(--border-hover);backdrop-filter:blur(8px)}
+.btn--ghost:hover{border-color:var(--red);color:var(--red)}
+.btn svg{width:18px;height:18px;fill:currentColor}
+
+/* ── HEADER ── */
+.header{position:fixed;top:0;left:0;right:0;z-index:100;padding:.75rem 0;transition:all .4s var(--ease)}
+.header.scrolled{background:rgba(10,10,10,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.header__inner{display:flex;align-items:center;justify-content:space-between;max-width:1440px;margin:0 auto;padding:0 3.5rem}
+.logo{font-family:var(--font-display);font-size:2.2rem;font-weight:900;letter-spacing:1.5px;line-height:1}
+.logo span:first-child{color:var(--white)}
+.logo span:last-child{color:var(--red)}
+.nav__list{display:flex;gap:.25rem}
+.nav__link{font-size:.85rem;font-weight:500;color:var(--gray-400);padding:.5rem .75rem;border-radius:8px;transition:.25s}
+.nav__link:hover{color:var(--white);background:rgba(255,255,255,.05)}
+.header__cta{font-family:var(--font-display);font-size:.85rem;font-weight:700;color:var(--white);background:var(--red);padding:.55rem 1.4rem;border-radius:8px;transition:.25s}
+.header__cta:hover{background:var(--red-hover);transform:translateY(-1px)}
+.menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-direction:column;gap:5px}
+.menu-toggle span{display:block;width:22px;height:2px;background:var(--white);border-radius:2px}
+
+/* ── HERO ── */
+.hero{min-height:auto;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero__bg{position:absolute;inset:0;background:radial-gradient(ellipse at 30% 20%,rgba(232,76,61,.06) 0%,transparent 50%),radial-gradient(ellipse at 70% 80%,rgba(45,212,191,.04) 0%,transparent 40%)}
+.hero__grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 45%,black 10%,transparent 65%);mask-image:radial-gradient(ellipse 80% 70% at 50% 45%,black 10%,transparent 65%)}
+.hero__inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;padding:6.5rem 0 3rem}
+.hero__content{max-width:100%}
+.hero__eyebrow{display:inline-flex;align-items:center;gap:.5rem;background:rgba(232,76,61,.08);border:1px solid rgba(232,76,61,.15);border-radius:100px;padding:.4rem 1rem;font-size:.8rem;font-weight:600;color:var(--red);margin-bottom:1.25rem}
+.hero__eyebrow::before{content:'';width:6px;height:6px;background:var(--red);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero__title{font-family:var(--font-display);font-size:clamp(2.4rem,4.5vw,3.6rem);font-weight:900;line-height:1.05;color:var(--white);margin-bottom:1.25rem}
+.hero__title em{font-style:normal;color:var(--red);display:block}
+.hero__sub{font-size:1rem;color:var(--gray-400);line-height:1.7;margin-bottom:1.5rem}
+.hero__actions{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.hero__proof{display:flex;align-items:center;gap:1rem}
+.hero__avatars{display:flex}
+.hero__avatar{width:36px;height:36px;border-radius:50%;border:2px solid var(--bg);margin-right:-10px;background:var(--gray-600);display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:var(--gray-300)}
+.hero__proof-text{font-size:.82rem;color:var(--gray-500)}
+.hero__proof-text strong{color:var(--white);display:block;font-size:.9rem}
+/* VSL Video */
+.hero__vsl{position:relative;width:100%;aspect-ratio:16/9;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-xl);overflow:hidden;transition:transform .1s linear,border-color .4s var(--ease),box-shadow .4s var(--ease);transform:scale(var(--vsl-scale,1));will-change:transform}
+.hero__vsl:hover{border-color:var(--border-hover);box-shadow:0 0 60px rgba(232,76,61,.08)}
+.hero__vsl-placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:.65rem;color:rgba(255,255,255,.08);letter-spacing:1px;text-transform:uppercase}
+.hero__vsl-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.45) 0%,transparent 45%,transparent 55%,rgba(0,0,0,.2) 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.75rem;cursor:pointer;transition:opacity .3s var(--ease);z-index:10;border-radius:var(--radius-xl)}
+.hero__vsl-overlay--hidden{opacity:0;pointer-events:none}
+.hero__vsl-play{width:72px;height:72px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 0 40px var(--red-glow);animation:playPulse 2.5s ease-in-out infinite;transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+@keyframes playPulse{0%,100%{transform:scale(1);box-shadow:0 0 40px var(--red-glow)}50%{transform:scale(1.12);box-shadow:0 0 60px rgba(232,76,61,.3)}}
+.hero__vsl-overlay:hover .hero__vsl-play{animation:none;transform:scale(1.12);box-shadow:0 0 60px rgba(232,76,61,.4)}
+.hero__vsl-play svg{width:26px;height:26px;fill:white;margin-left:4px}
+.hero__vsl-duration{font-size:.8rem;font-weight:700;color:rgba(255,255,255,.8);letter-spacing:.5px;background:rgba(0,0,0,.4);backdrop-filter:blur(6px);padding:.25rem .75rem;border-radius:100px;border:1px solid rgba(255,255,255,.12)}
+
+/* ── SOCIAL PROOF BAR ── */
+.proof-bar{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:2rem 0;overflow:hidden}
+.proof-bar__inner{display:flex;align-items:center;justify-content:center;gap:3rem;flex-wrap:wrap}
+.proof-bar__item{display:flex;align-items:center;gap:.75rem}
+.proof-bar__icon{width:40px;height:40px;border-radius:10px;background:var(--bg-card);border:1px solid var(--border);display:flex;align-items:center;justify-content:center}
+.proof-bar__icon svg{width:20px;height:20px}
+.proof-bar__stat{font-family:var(--font-display);font-size:1.4rem;font-weight:800;color:var(--white);line-height:1}
+.proof-bar__label{font-size:.72rem;color:var(--gray-500)}
+
+/* ── PROBLEM SECTION ── */
+.problems__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.5rem}
+.problem-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;transition:.3s var(--ease)}
+.problem-card:hover{border-color:var(--border-hover);background:var(--bg-card-hover)}
+.problem-card__icon{font-size:1.5rem;margin-bottom:.75rem}
+.problem-card__title{font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--white);margin-bottom:.4rem}
+.problem-card__text{font-size:.85rem;color:var(--gray-500);line-height:1.6}
+
+/* ── TRANSFORMATIONS ── */
+.transforms__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2.5rem}
+.tf-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:.3s var(--ease)}
+.tf-card:hover{border-color:rgba(232,76,61,.2);transform:translateY(-4px)}
+.tf-card__images{display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden;border-radius:var(--radius-lg) var(--radius-lg) 0 0}
+.tf-card__img{aspect-ratio:3/4;display:flex;align-items:flex-end;justify-content:center;padding-bottom:1rem;font-size:.7rem;color:rgba(255,255,255,.95);text-transform:uppercase;letter-spacing:2px;font-weight:700;font-family:var(--font-display);position:relative;background-size:cover;background-position:center;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+.tf-card__img::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55) 0%,transparent 40%);pointer-events:none}
+.tf-card__img span,.tf-card__img{z-index:1}
+.tf-card__img--before{background-color:#1a1a1a}
+.tf-card__img--after{background-color:rgba(45,212,191,.08)}
+/* Trennlinie zwischen vorher/nachher */
+.tf-card__images::before{content:'';position:absolute;top:0;bottom:0;left:50%;width:2px;background:rgba(255,255,255,.2);z-index:3;transform:translateX(-50%)}
+.tf-card__arrow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:36px;height:36px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:4;box-shadow:0 0 20px var(--red-glow);border:2px solid rgba(255,255,255,.2)}
+.tf-card__arrow svg{width:14px;height:14px;fill:white}
+.tf-card__info{padding:1.25rem}
+.tf-card__name{font-family:var(--font-display);font-weight:700;font-size:1rem;color:var(--white)}
+.tf-card__meta{font-size:.78rem;color:var(--gray-500);margin-top:.15rem}
+.tf-card__result{display:inline-flex;align-items:center;gap:.4rem;margin-top:.6rem;background:var(--red-glow);border:1px solid rgba(232,76,61,.2);border-radius:100px;padding:.25rem .75rem;font-family:var(--font-display);font-size:.8rem;font-weight:700;color:var(--red)}
+
+/* ── VIDEOS ── */
+.videos__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;margin-top:2.5rem}
+.video-card{background:var(--bg-card);border:1px solid rgba(0,0,0,.07);border-radius:var(--radius-lg);overflow:hidden;transition:.3s var(--ease)}
+.section--light .video-card{background:#f9f9f9;border-color:rgba(0,0,0,.07)}
+.video-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.1)}
+.video-card__embed{width:100%;aspect-ratio:16/9;display:block}
+.video-card__embed wistia-player{width:100%;height:100%}
+.video-card__info{padding:1rem 1.25rem 1.25rem}
+.video-card__name{font-family:var(--font-display);font-weight:800;color:#111827;font-size:.95rem;margin-bottom:.6rem}
+.video-card__result{font-size:.82rem;color:#6b7280}
+.video-card__results{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.1rem}
+.video-card__tag{font-size:.75rem;font-weight:600;color:var(--red);background:rgba(232,76,61,.07);border:1px solid rgba(232,76,61,.15);border-radius:6px;padding:.25rem .6rem;white-space:nowrap}
+/* Placeholder card (no video yet) */
+.video-card__placeholder-wrap{aspect-ratio:16/9;background:#f0f0f0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.75rem;color:#9ca3af}
+.video-card__placeholder-wrap svg{width:40px;height:40px;stroke:#d1d5db;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.video-card__placeholder-wrap span{font-size:.8rem;letter-spacing:1px;text-transform:uppercase}
+
+/* ── REVIEWS BADGE ── */
+.reviews-row{display:flex;align-items:center;justify-content:center;gap:2rem;margin-top:2.5rem;flex-wrap:wrap}
+.review-badge{display:flex;align-items:center;gap:.75rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:.85rem 1.25rem;transition:.3s}
+.review-badge:hover{border-color:var(--border-hover)}
+.review-badge__stars{display:flex;gap:2px}
+.review-badge__stars svg{width:16px;height:16px;fill:var(--red)}
+.review-badge__score{font-family:var(--font-display);font-size:1.3rem;font-weight:800;color:var(--white)}
+.review-badge__text{font-size:.75rem;color:var(--gray-500);line-height:1.3}
+.review-badge__text strong{color:var(--gray-300);display:block}
+
+/* ── VERTICAL TIMELINE (5 Säulen) ── */
+.timeline{position:relative;max-width:700px;margin:3rem auto 0;padding-left:60px}
+.timeline::before{content:'';position:absolute;left:28px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,transparent,rgba(232,76,61,.3) 10%,rgba(232,76,61,.3) 90%,transparent)}
+.timeline__item{position:relative;padding:0 0 3rem 2.5rem}
+.timeline__item:last-child{padding-bottom:0}
+.timeline__node{position:absolute;left:-32px;top:0;width:56px;height:56px;border-radius:50%;background:rgba(232,76,61,.08);border:2px solid rgba(232,76,61,.2);display:flex;align-items:center;justify-content:center}
+.timeline__node svg{width:24px;height:24px}
+.timeline__label{font-family:var(--font-display);font-size:.75rem;font-weight:700;color:var(--red);letter-spacing:2px;text-transform:uppercase;margin-bottom:.35rem}
+.timeline__title{font-family:var(--font-display);font-size:1.25rem;font-weight:800;color:var(--white);margin-bottom:.4rem}
+.timeline__text{font-size:.88rem;color:var(--gray-400);line-height:1.7;max-width:420px}
+
+/* ── 3-COL COMPARE ── */
+/* Compare scroll animation */
+.compare3-wrap{position:relative;perspective:1200px}
+.compare3__col{transition:transform .1s linear,opacity .1s linear;will-change:transform,opacity}
+.compare3{display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:1.25rem;margin-top:2.5rem;align-items:center}
+.compare3__col{border-radius:var(--radius-lg);padding:1.75rem;border:1px solid var(--border);background:var(--bg-card)}
+.compare3__col--hero{border:1.5px dashed rgba(232,76,61,.4);background:linear-gradient(135deg,rgba(232,76,61,.05),rgba(232,76,61,.02));position:relative;overflow:visible;padding:2.25rem 2rem;align-self:stretch}
+.compare3__col--hero::before{content:'';position:absolute;inset:-1px;border-radius:var(--radius-lg);background:linear-gradient(135deg,rgba(232,76,61,.08),transparent);pointer-events:none;z-index:0}
+.compare3__badge{position:absolute;top:-14px;right:20px;display:inline-flex;align-items:center;gap:.35rem;background:linear-gradient(135deg,rgba(232,76,61,.15),rgba(232,76,61,.08));border:1px solid rgba(232,76,61,.25);color:var(--gray-300);font-family:var(--font-display);font-size:.6rem;font-weight:700;letter-spacing:1px;padding:.35rem .7rem;border-radius:8px;z-index:2}
+.compare3__badge svg{width:14px;height:14px}
+.compare3__heading{font-family:var(--font-display);font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:1.25rem;display:flex;align-items:center;gap:.5rem}
+.compare3__heading svg{width:18px;height:18px;flex-shrink:0}
+.compare3__list{display:flex;flex-direction:column;gap:.75rem}
+.compare3__item{display:flex;align-items:flex-start;gap:.6rem;font-size:.84rem;line-height:1.5;color:var(--gray-400)}
+.compare3__item svg{width:16px;height:16px;flex-shrink:0;margin-top:2px}
+.compare3__col--hero .compare3__list{gap:.9rem}
+.compare3__col--hero .compare3__item{color:var(--gray-300);font-size:.88rem;position:relative;z-index:1}
+.compare3__col--hero .compare3__item svg{width:20px;height:20px}
+
+/* ── COUNTER ANIMATION ── */
+.counter{display:inline-block;font-variant-numeric:tabular-nums;color:var(--red);transition:color .3s}
+
+/* ── WARUM DIE MEISTEN SCHEITERN (LIGHT + GRID BG) ── */
+.scheitern{background:var(--white);color:#374151;position:relative;overflow:hidden}
+.scheitern__grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(0,0,0,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.035) 1px,transparent 1px);background-size:72px 72px;pointer-events:none}
+.scheitern__pill{display:inline-flex;align-items:center;gap:.4rem;background:rgba(232,76,61,.06);border:1px solid rgba(232,76,61,.15);border-radius:100px;padding:.4rem 1.1rem;font-family:var(--font-display);font-size:.8rem;font-weight:600;color:var(--red);letter-spacing:.5px;position:relative}
+.scheitern__pill svg{stroke:var(--red)}
+.scheitern__intro{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-bottom:4rem}
+.scheitern__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3rem;position:relative}
+.scheitern__card{padding:2rem;background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:var(--radius);box-shadow:0 1px 3px rgba(0,0,0,.04),0 4px 16px rgba(0,0,0,.03);transition:all .4s var(--ease);cursor:default}
+.scheitern__card:hover{border-color:rgba(232,76,61,.35);box-shadow:0 2px 8px rgba(232,76,61,.08),0 8px 24px rgba(0,0,0,.06);transform:translateY(-2px)}
+.scheitern__icon{width:44px;height:44px;margin-bottom:1.25rem;background:rgba(232,76,61,.06);border-radius:10px;display:flex;align-items:center;justify-content:center}
+.scheitern__icon svg{width:24px;height:24px}
+.scheitern__title{font-family:var(--font-display);font-size:1.05rem;font-weight:800;color:#111827;margin-bottom:.6rem}
+.scheitern__text{font-size:.87rem;color:#6b7280;line-height:1.7}
+.scheitern .section-title{color:#111827}
+.scheitern .section-title em{color:var(--red)}
+.scheitern .problems__grid{position:relative}
+/* scheitern problem-card overrides removed — unified into scheitern__card */
+.scheitern .btn--red{color:white}
+
+/* ── BENTO BOX ── */
+.bento{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:2.5rem}
+.bento--bottom{grid-template-columns:repeat(3,1fr);margin-top:1.25rem}
+.bento__card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-xl);padding:0;overflow:hidden;transition:.4s var(--ease);position:relative;cursor:default}
+.bento__card:hover,.bento__card--active{border-color:rgba(232,76,61,.15);box-shadow:0 8px 40px rgba(0,0,0,.2)}
+.bento__visual{width:100%;aspect-ratio:16/10;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:1.5rem}
+.bento--bottom .bento__visual{aspect-ratio:4/3}
+.bento__body{padding:1.25rem 1.75rem 1.75rem}
+.bento__title{font-family:var(--font-display);font-size:1.15rem;font-weight:800;color:var(--white);margin-bottom:.35rem}
+.bento__text{font-size:.85rem;color:var(--gray-500);line-height:1.65}
+
+/* Bento SVG animations */
+.bento__card svg.bento-svg{transition:.5s var(--ease)}
+.bento__card:hover svg.bento-svg,.bento__card--active svg.bento-svg{transform:scale(1.03)}
+
+/* Bars animation */
+.bento-bar{transition:transform .6s var(--ease),opacity .4s;opacity:.5;transform-box:fill-box;transform-origin:center bottom}
+.bento__card:hover .bento-bar,.bento__card--active .bento-bar{opacity:1}
+.bento__card:hover .bento-bar--1,.bento__card--active .bento-bar--1{transform:scaleY(1.65)}
+.bento__card:hover .bento-bar--2,.bento__card--active .bento-bar--2{transform:scaleY(1.4)}
+.bento__card:hover .bento-bar--3,.bento__card--active .bento-bar--3{transform:scaleY(1.2)}
+.bento__card:hover .bento-bar--4,.bento__card--active .bento-bar--4{transform:scaleY(1.35)}
+.bento__card:hover .bento-bar--5,.bento__card--active .bento-bar--5{transform:scaleY(1.4)}
+.bento__card:hover .bento-bar--6,.bento__card--active .bento-bar--6{transform:scaleY(1.3)}
+
+/* Timeline nodes */
+.bento-node{transition:all .4s var(--ease);opacity:.4}
+.bento__card:hover .bento-node,.bento__card--active .bento-node{opacity:1;transform:translateX(0)}
+.bento-node--1{transform:translateX(-12px)}
+.bento-node--2{transform:translateX(-8px)}
+.bento-node--3{transform:translateX(-4px)}
+.bento-node--4{transform:translateX(0)}
+
+/* Gauge — scale 50–100, score 60 = 20% (red/left), score 90 = 80% (green/right) */
+.bento-gauge-fill{transition:stroke-dashoffset 1.2s var(--ease)}
+.bento-needle{transition:transform 1.2s var(--ease);transform-origin:100px 110px;transform:rotate(-54deg)}
+.bento__card:hover .bento-needle,.bento__card--active .bento-needle{transform:rotate(54deg)}
+.bento__card:hover .bento-gauge-fill,.bento__card--active .bento-gauge-fill{stroke-dashoffset:40.8}
+.bento-score-bad{transition:opacity .3s var(--ease);opacity:1}
+.bento-score-good{transition:opacity .3s .5s var(--ease);opacity:0}
+.bento__card:hover .bento-score-bad,.bento__card--active .bento-score-bad{opacity:0;transition-delay:0s}
+.bento__card:hover .bento-score-good,.bento__card--active .bento-score-good{opacity:1;transition-delay:.5s}
+
+/* Chat bubbles */
+.bento-bubble{transition:all .5s var(--ease);opacity:0;transform:translateY(10px)}
+.bento__card:hover .bento-bubble,.bento__card--active .bento-bubble{opacity:1;transform:translateY(0)}
+.bento-bubble--2{transition-delay:.15s}
+.bento-bubble--3{transition-delay:.3s}
+
+/* Graph line */
+.bento-graph-line{stroke-dasharray:300;stroke-dashoffset:300;transition:stroke-dashoffset 1.2s var(--ease)}
+.bento__card:hover .bento-graph-line,.bento__card--active .bento-graph-line{stroke-dashoffset:0}
+.bento-graph-dot{opacity:0;transition:opacity .3s .8s}
+.bento__card:hover .bento-graph-dot,.bento__card--active .bento-graph-dot{opacity:1}
+
+/* Light mode overrides */
+.section--light .bento__card{background:var(--gray-100);border-color:rgba(0,0,0,.06)}
+.section--light .bento__card:hover,.section--light .bento__card--active{border-color:rgba(232,76,61,.12);box-shadow:0 8px 40px rgba(0,0,0,.06)}
+/* Bento video card */
+.bento__video-wrap{position:relative;width:100%;height:100%;overflow:hidden}
+.bento__video-wrap video,.bento__video-wrap .bento__video-placeholder{width:100%;height:100%;object-fit:cover;display:block}
+.bento__video-placeholder{background:linear-gradient(135deg,#1a1a1a,#111);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.08);font-size:.8rem;font-family:var(--font-body)}
+.bento__video-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.7) 0%,transparent 50%);pointer-events:none}
+.bento__video-badge{position:absolute;top:12px;left:12px;display:flex;align-items:center;gap:6px;background:rgba(0,0,0,.5);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.08);border-radius:100px;padding:5px 10px;font-size:.65rem;color:rgba(255,255,255,.6);letter-spacing:.5px;text-transform:uppercase;font-weight:600}
+.bento__video-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--red);animation:livePulse 2s ease-in-out infinite}
+@keyframes livePulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+/* Hero background image */
+.hero__bg-img{position:absolute;inset:0;background-size:cover;background-position:center top;opacity:.15;z-index:0}
+.hero__bg-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--bg) 35%,transparent 65%)}
+
+/* Image placeholder universal style */
+.img-placeholder{width:100%;height:100%;background:linear-gradient(135deg,#1a1a1a,#252525);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.08);font-size:.75rem;font-family:var(--font-body);border-radius:inherit;position:relative;overflow:hidden}
+.img-placeholder::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 40%,rgba(232,76,61,.03) 100%)}
+.img-placeholder--light{background:linear-gradient(135deg,#e5e7eb,#d1d5db);color:rgba(0,0,0,.08)}
+.img-placeholder--light::after{background:linear-gradient(135deg,transparent 40%,rgba(232,76,61,.04) 100%)}
+
+/* CTA image strip */
+.cta-image-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2.5rem;max-width:700px;margin-left:auto;margin-right:auto}
+.cta-image-strip__item{aspect-ratio:1;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border)}
+
+.section--light .bento__title{color:#111827}
+.section--light .bento__text{color:#6b7280}
+
+/* ── FLOW DIAGRAM (Kontinuierliche Optimierung) ── */
+.flow{position:relative;overflow:hidden;background:#070707}
+.flow__grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:80px 80px;-webkit-mask-image:radial-gradient(ellipse 60% 50% at 50% 30%,black 10%,transparent 70%);mask-image:radial-gradient(ellipse 60% 50% at 50% 30%,black 10%,transparent 70%)}
+.flow__glow{position:absolute;top:-80px;left:50%;transform:translateX(-50%);width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(232,76,61,.08) 0%,transparent 60%);pointer-events:none}
+.flow__inner{position:relative;z-index:2;text-align:center;max-width:900px;margin:0 auto}
+
+/* Unified SVG diagram */
+.flow__diagram{width:100%;max-width:800px;margin:0 auto}
+.flow__diagram svg{width:100%;height:auto;display:block}
+
+/* Particle glow filter */
+@keyframes particlePulse{0%,100%{opacity:.4;r:3}50%{opacity:1;r:5}}
+
+/* Center content */
+.flow__center{margin:1.5rem auto 1rem;padding:0 1rem}
+.flow__title{font-family:var(--font-display);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;color:var(--white);margin-bottom:.75rem}
+.flow__title em{font-style:normal;color:var(--red)}
+.flow__quote{font-size:.9rem;color:var(--gray-500);max-width:540px;margin:0 auto;line-height:1.7;font-style:italic}
+
+/* Bottom SVG connector */
+.flow__connector-bottom{width:100%;max-width:800px;margin:1rem auto 0}
+.flow__connector-bottom svg{width:100%;height:auto;display:block}
+
+/* Bottom 3 cards */
+.flow__cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:0}
+.flow__card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem;text-align:left;transition:.3s var(--ease)}
+.flow__card:hover{border-color:rgba(232,76,61,.15);background:var(--bg-card-hover)}
+.flow__card-head{display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem}
+.flow__card-icon{width:28px;height:28px;stroke:var(--red);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.flow__card-title{font-family:var(--font-display);font-size:1.05rem;font-weight:800;color:var(--white)}
+.flow__card-text{font-size:.85rem;color:var(--gray-500);line-height:1.65}
+
+/* ── FLOATING CTA ── */
+.floating-cta{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);z-index:90;opacity:0;pointer-events:none;transition:.4s var(--ease)}
+.floating-cta.visible{opacity:1;pointer-events:auto}
+.floating-cta a{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--font-display);font-size:.85rem;font-weight:700;color:white;background:var(--red);padding:.7rem 1.8rem;border-radius:100px;box-shadow:0 4px 24px rgba(232,76,61,.35),0 0 0 1px rgba(232,76,61,.15);transition:.3s var(--ease);letter-spacing:.3px}
+.floating-cta a:hover{background:var(--red-hover);transform:translateY(-2px);box-shadow:0 8px 32px rgba(232,76,61,.4)}
+.floating-cta a svg{width:16px;height:16px;fill:currentColor}
+
+/* ── COMPARE ── */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.5rem}
+.compare__col{border-radius:var(--radius-xl);padding:2.25rem;border:1px solid var(--border)}
+.compare__col--bad{background:var(--bg-card)}
+.compare__col--good{background:linear-gradient(135deg,rgba(232,76,61,.06),rgba(45,212,191,.04));border-color:rgba(232,76,61,.15)}
+.compare__heading{font-family:var(--font-display);font-size:1.15rem;font-weight:700;color:var(--white);margin-bottom:1.5rem;display:flex;align-items:center;gap:.6rem}
+.compare__heading--good{color:var(--white)}
+.compare__list{display:flex;flex-direction:column;gap:.85rem}
+.compare__item{display:flex;align-items:flex-start;gap:.6rem;font-size:.88rem;line-height:1.5;color:var(--gray-400)}
+.compare__item svg{width:16px;height:16px;flex-shrink:0;margin-top:2px}
+
+/* ── ABOUT ── */
+.about__grid{display:grid;grid-template-columns:1fr 1.2fr;gap:2.5rem;align-items:center;margin-top:2rem}
+.about__image{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-xl);aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;font-size:.7rem;color:rgba(255,255,255,.1);text-transform:uppercase;letter-spacing:1px}
+.about__stats{display:flex;gap:2rem;margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border)}
+.about__stat-num{font-family:var(--font-display);font-size:1.8rem;font-weight:800;color:var(--red);line-height:1}
+.about__stat-label{font-size:.75rem;color:var(--gray-500);margin-top:.15rem}
+
+/* ── TESTIMONIALS ── */
+.testi__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2.5rem}
+.testi-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:2rem;transition:.3s var(--ease);position:relative;overflow:hidden}
+.testi-card:hover{border-color:var(--border-hover);transform:translateY(-3px);box-shadow:0 12px 40px rgba(0,0,0,.15)}
+.testi-card__quote{position:absolute;top:1rem;right:1.25rem;font-family:Georgia,serif;font-size:3.5rem;line-height:1;color:rgba(232,76,61,.12);pointer-events:none}
+.testi-card__result{display:inline-flex;align-items:center;gap:.35rem;background:rgba(232,76,61,.08);border:1px solid rgba(232,76,61,.12);border-radius:100px;padding:.2rem .65rem;font-family:var(--font-display);font-size:.65rem;font-weight:700;color:var(--red);letter-spacing:.5px;margin-bottom:.75rem}
+.testi-card__result svg{width:12px;height:12px;fill:var(--red)}
+.testi-card__stars{display:flex;gap:2px;margin-bottom:.75rem}
+.testi-card__stars svg{width:14px;height:14px;fill:#f59e0b}
+.testi-card__text{font-size:.9rem;color:var(--gray-300);line-height:1.75;margin-bottom:1.5rem;font-style:italic;position:relative}
+.testi-card__author{display:flex;align-items:center;gap:.75rem;padding-top:1rem;border-top:1px solid var(--border)}
+.testi-card__avatar{width:44px;height:44px;border-radius:50%;background:var(--bg-elevated);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.75rem;color:var(--gray-500);flex-shrink:0}
+.testi-card__name{font-family:var(--font-display);font-weight:700;font-size:.88rem;color:var(--white)}
+.testi-card__role{font-size:.72rem;color:var(--gray-500)}
+
+/* ── STANDORT MAP ── */
+.standort__grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center;margin-top:2rem}
+.standort__map{position:relative}
+.standort__map svg{width:100%;height:auto;max-width:400px;margin:0 auto;display:block}
+.standort__info{display:flex;flex-direction:column;gap:1.5rem}
+.standort__card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;display:flex;align-items:flex-start;gap:1rem}
+.standort__card-icon{width:40px;height:40px;flex-shrink:0;border-radius:10px;background:var(--red-glow);border:1px solid rgba(232,76,61,.15);display:flex;align-items:center;justify-content:center}
+.standort__card-icon svg{width:18px;height:18px}
+.standort__card-title{font-family:var(--font-display);font-weight:700;font-size:.95rem;color:var(--white);margin-bottom:.2rem}
+.standort__card-text{font-size:.82rem;color:var(--gray-500);line-height:1.5}
+
+/* ── FAQ ── */
+.faq__list{max-width:760px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.5rem}
+.faq-item{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:.3s}
+.faq-item.active{border-color:rgba(232,76,61,.15)}
+.faq-item__q{display:flex;align-items:center;justify-content:space-between;padding:1.15rem 1.5rem;cursor:pointer;font-weight:600;font-size:.92rem;color:var(--white);transition:.2s}
+.faq-item__q:hover{background:var(--bg-card-hover)}
+.faq-item__icon{width:22px;height:22px;transition:transform .3s;flex-shrink:0;margin-left:1rem;color:var(--gray-500)}
+.faq-item.active .faq-item__icon{transform:rotate(45deg);color:var(--red)}
+.faq-item__a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s}
+.faq-item.active .faq-item__a{max-height:300px;padding:0 1.5rem 1.25rem}
+.faq-item__a p{font-size:.88rem;color:var(--gray-400);line-height:1.75}
+
+/* ── STEPS ── */
+.steps__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+.step-card{text-align:center;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:2rem 1.5rem;transition:.3s var(--ease)}
+.step-card:hover{border-color:var(--border-hover)}
+.step-card__num{width:52px;height:52px;margin:0 auto 1rem;border-radius:50%;background:var(--red-glow);border:1px solid rgba(232,76,61,.15);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.3rem;font-weight:800;color:var(--red)}
+.step-card__title{font-family:var(--font-display);font-size:1.15rem;font-weight:700;color:var(--white);margin-bottom:.5rem}
+.step-card__text{font-size:.85rem;color:var(--gray-500);line-height:1.6}
+
+/* ── FINAL CTA ── */
+.final-cta{padding:4rem 0}
+.final-cta__box{border:2px solid #E84C3D;border-radius:var(--radius-xl);padding:4rem 2rem;text-align:center;position:relative;overflow:hidden;background-image:url('images/cta-bg.jpg');background-size:cover;background-position:center;transform:scale(.94);opacity:.85;transition:transform .6s cubic-bezier(.22,1,.36,1),opacity .6s ease,border-color .6s ease;box-shadow:0 0 30px rgba(232,76,61,.15),inset 0 0 60px rgba(0,0,0,.3)}
+.final-cta__box.final-cta__box--visible{transform:scale(1);opacity:1;border-color:#E84C3D;box-shadow:0 0 40px rgba(232,76,61,.25),inset 0 0 60px rgba(0,0,0,.3)}
+.final-cta__box-overlay{position:absolute;inset:0;background:rgba(0,0,0,.93);z-index:0}
+.final-cta__box-vignette{position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 30%,rgba(0,0,0,.7) 100%);z-index:0}
+.final-cta__box-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 45%,black 10%,transparent 65%);mask-image:radial-gradient(ellipse 80% 70% at 50% 45%,black 10%,transparent 65%);z-index:0}
+.final-cta__box::before{content:'';position:absolute;top:-100px;right:-100px;width:300px;height:300px;background:var(--red);opacity:.08;border-radius:50%;z-index:0}
+.final-cta__box::after{content:'';position:absolute;bottom:-60px;left:-60px;width:200px;height:200px;background:var(--red);opacity:.06;border-radius:50%;z-index:0}
+.final-cta__title{font-family:var(--font-display);font-size:clamp(1.8rem,4vw,3rem);font-weight:900;color:var(--white);margin-bottom:1rem;position:relative;z-index:1}
+.final-cta__title em{font-style:normal;color:var(--red)}
+.final-cta__desc{font-size:1rem;color:var(--gray-500);max-width:480px;margin:0 auto 2rem;position:relative;z-index:1}
+
+/* ── FOOTER ── */
+.footer{border-top:1px solid var(--border);padding:2.5rem 0 2rem}
+.footer__inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem}
+.footer__logo{font-family:var(--font-display);font-size:1.2rem;font-weight:900}
+.footer__logo span:first-child{color:var(--white)}
+.footer__logo span:last-child{color:var(--red)}
+.footer__links{display:flex;gap:1.5rem}
+.footer__link{font-size:.78rem;color:var(--gray-500);transition:.2s}
+.footer__link:hover{color:var(--white)}
+.footer__copy{font-size:.72rem;color:var(--gray-600);margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem}
+.footer__credit{text-decoration:none;display:flex;flex-direction:column;transition:opacity .3s}
+.footer__credit:hover{opacity:1}
+.schmidtke-logo{animation:schmidtkePulse 3s ease-in-out infinite}
+@keyframes schmidtkePulse{0%,100%{opacity:.5}50%{opacity:1}}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+    .hero__inner{grid-template-columns:1fr;gap:2rem;text-align:center}
+    .hero__eyebrow{margin-left:auto;margin-right:auto}
+    .hero__actions{justify-content:center}
+    .hero__proof{justify-content:center}
+    .hero__vsl{aspect-ratio:16/9}
+    .problems__grid,.transforms__grid,.testi__grid{grid-template-columns:repeat(2,1fr)}
+    .bento--bottom{grid-template-columns:1fr 1fr}
+    .process-step,.process-step:nth-child(even){grid-template-columns:1fr;direction:ltr}
+    .process-step:nth-child(even)>*{direction:ltr}
+    .about__grid,.standort__grid{grid-template-columns:1fr}
+    .scheitern__intro{grid-template-columns:1fr;gap:2rem;text-align:center}
+    .scheitern__intro .section-desc{margin-left:auto;margin-right:auto}
+    .section-title,.section-label{text-align:center}
+    .section-desc{text-align:center;margin-left:auto;margin-right:auto}
+}
+@media(max-width:768px){
+    /* Header */
+    .nav__list,.header__cta{display:none}
+    .menu-toggle{display:flex}
+    .header__inner{padding:0 1.25rem}
+    .logo{font-size:1.6rem}
+
+    /* Container */
+    .container{padding:0 1.25rem}
+
+    /* Hero — alles zentriert */
+    .hero{min-height:auto}
+    .hero__inner{padding:5rem 0 2.5rem;text-align:center}
+    .hero__vsl{aspect-ratio:16/9}
+    .hero__eyebrow{display:inline-flex;margin-left:auto;margin-right:auto}
+    .hero__title{text-align:center}
+    .hero__sub{text-align:center}
+    .hero__actions{flex-direction:column;align-items:center}
+    .hero__proof{justify-content:center}
+    .hero__proof-text{text-align:left}
+
+    /* Sections */
+    .section{padding:3.5rem 0}
+    .section-title,.section-label,.section-desc{text-align:center}
+    .section-desc{margin-left:auto;margin-right:auto}
+
+    /* Grids */
+    .problems__grid,.transforms__grid,.testi__grid,.steps__grid,.compare,.compare3,.bento,.bento--bottom,.flow__cards,.scheitern__grid{grid-template-columns:1fr}
+    .videos__grid{grid-template-columns:1fr}
+    .scheitern__intro{grid-template-columns:1fr;gap:2rem;text-align:center}
+    .scheitern__intro .section-desc{margin-left:auto;margin-right:auto}
+    .scheitern__card{padding:1.5rem}
+
+    /* Proof bar */
+    .proof-bar__inner{gap:1.5rem;justify-content:center}
+    .proof-bar__item{flex-direction:column;text-align:center;gap:.4rem}
+
+    /* Flow */
+    .flow__icons{gap:2rem}
+    .flow__icon-circle{width:56px;height:56px}
+    .flow__icon-circle svg{width:24px;height:24px}
+
+    /* Buttons */
+    .btn{width:100%;justify-content:center}
+
+    /* Compare */
+    .compare3-wrap .compare3__col--left,.compare3-wrap .compare3__col--right{transform:none !important;opacity:1 !important}
+
+    /* Misc */
+    .standort__map{order:-1}
+    .bento__card[style*="grid-template-columns"]{grid-template-columns:1fr !important}
+    .cta-image-strip{grid-template-columns:repeat(3,1fr);gap:.5rem}
+
+    /* Text centers for light sections */
+    .scheitern .text-center,.section--light .text-center{text-align:center}
+
+    /* About section */
+    .about__content{text-align:center}
+    .about__content .section-desc{margin-left:auto;margin-right:auto}
+
+    /* Testimonials */
+    .testi__grid{grid-template-columns:1fr}
+
+    /* FAQ */
+    .faq-item__q{font-size:.95rem}
+
+    /* Footer */
+    .footer__inner{flex-direction:column;align-items:center;text-align:center}
+    .footer__copy{flex-direction:column;text-align:center}
+    .footer__links{justify-content:center;flex-wrap:wrap;gap:1rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ HEADER ═══════════ -->
+<header class="header" id="header">
+<div class="header__inner">
+    <a href="#" class="logo"><span>PATRICK</span><span>DETTA</span></a>
+    <nav>
+        <ul class="nav__list">
+            <li><a href="#ergebnisse" class="nav__link">Erfolge</a></li>
+            <li><a href="#arbeitsweise" class="nav__link">Arbeitsweise</a></li>
+            <li><a href="#ueber" class="nav__link">Über mich</a></li>
+            <li><a href="#faq" class="nav__link">FAQ</a></li>
+        </ul>
+    </nav>
+    <a href="#kontakt" class="header__cta">Erstgespräch buchen</a>
+    <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</div>
+</header>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero">
+<div class="hero__bg"></div>
+<div class="hero__grid"></div>
+<!-- BILD: Patrick im Studio, halbtransparent als Hintergrund — hero-bg.jpg -->
+<div class="hero__bg-img" style="background-image:url('images/hero-bg.jpg')"></div>
+<div class="container">
+    <div class="hero__inner">
+        <div class="hero__content">
+            <div class="hero__eyebrow">Jetzt Plätze sichern &mdash; limitierte Verfügbarkeit</div>
+            <h1 class="hero__title">
+                12 Kilo in 10 Wochen dauerhaft abnehmen
+                <em>als Selbstständiger oder Führungskraft.</em>
+            </h1>
+            <p class="hero__sub">Ohne viel Aufwand oder eine Minute das Gefühl zu haben, auf Diät zu sein. Dein persönlicher Coach aus Freiburg.</p>
+            <div class="hero__actions">
+                <a href="#kontakt" class="btn btn--red">
+                    Kostenlos beraten lassen
+                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#ergebnisse" class="btn btn--ghost">Erfolge ansehen</a>
+            </div>
+            <div class="hero__proof">
+                <!-- BILDER: Echte Kundenfotos als Avatare — avatar-1.jpg bis avatar-4.jpg -->
+                <div class="hero__avatars">
+                    <div class="hero__avatar" style="background:url('images/avatar-1.jpg') center/cover;color:transparent">SK</div>
+                    <div class="hero__avatar" style="background:url('images/avatar-2.jpg') center/cover;color:transparent">MR</div>
+                    <div class="hero__avatar" style="background:url('images/avatar-3.jpg') center/cover;color:transparent">TW</div>
+                    <div class="hero__avatar" style="background:url('images/avatar-4.jpg') center/cover;color:transparent">AB</div>
+                    <div class="hero__avatar">+</div>
+                </div>
+                <div class="hero__proof-text"><strong>200+ zufriedene Kunden</strong>4.9 / 5.0 Sterne auf Google</div>
+            </div>
+        </div>
+
+        <!-- VSL Video (Wistia) -->
+        <script src="https://fast.wistia.com/embed/v0ggpl9jy8.js" async type="module"></script>
+        <style>wistia-player[media-id='v0ggpl9jy8']:not(:defined){background:center/contain no-repeat url('https://fast.wistia.com/embed/medias/v0ggpl9jy8/swatch');display:block;filter:blur(5px);padding-top:56.25%}</style>
+        <div class="hero__vsl" id="vslWrap">
+            <wistia-player media-id="v0ggpl9jy8" aspect="1.7777777777777777" id="vslPlayer" style="position:absolute;inset:0;width:100%;height:100%;border-radius:var(--radius-xl)"></wistia-player>
+            <!-- Custom play overlay — verschwindet beim Klick -->
+            <div class="hero__vsl-overlay" id="vslOverlay" onclick="vslPlay()">
+                <div class="hero__vsl-play">
+                    <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                </div>
+                <span class="hero__vsl-duration">2:00</span>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- ═══════════ PROOF BAR ═══════════ -->
+<div class="proof-bar">
+<div class="proof-bar__inner container">
+    <div class="proof-bar__item">
+        <div class="proof-bar__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#E84C3D"/></svg></div>
+        <div><div class="proof-bar__stat">4.9</div><div class="proof-bar__label">Google Bewertung</div></div>
+    </div>
+    <div class="proof-bar__item">
+        <div class="proof-bar__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><div class="proof-bar__stat">200+</div><div class="proof-bar__label">Betreute Kunden</div></div>
+    </div>
+    <div class="proof-bar__item">
+        <div class="proof-bar__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><div class="proof-bar__stat">98%</div><div class="proof-bar__label">Weiterempfehlung</div></div>
+    </div>
+    <div class="proof-bar__item">
+        <div class="proof-bar__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#E84C3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><div class="proof-bar__stat">10+</div><div class="proof-bar__label">Jahre Erfahrung</div></div>
+    </div>
+</div>
+</div>
+
+<!-- ═══════════ PROBLEM + WARUM DIE MEISTEN SCHEITERN (LIGHT) ═══════════ -->
+<section class="section scheitern">
+<div class="scheitern__grid-bg"></div>
+<div class="container" style="position:relative;z-index:1">
+    <!-- Intro: 2-column with animated counter -->
+    <div class="scheitern__intro">
+        <div>
+            <p class="section-label">Kommt dir das bekannt vor?</p>
+            <h2 class="section-title">Du gibst im Business <span class="counter" data-target="100">0</span>% &mdash;<br><em>aber dein Körper bleibt auf der Strecke.</em></h2>
+            <p class="section-desc" style="color:#6b7280">Die meisten Unternehmer kennen das: Der Alltag frisst dich auf, und irgendwann merkst du, dass der Bauch immer weiter wächst.</p>
+        </div>
+        <!-- BILD: Patrick beim 1:1 Coaching mit einem Unternehmer — coaching-action.jpg -->
+        <div class="photo-block">
+            <div class="photo-block__bg" style="background:url('images/coaching-action.jpg') center/cover, linear-gradient(135deg,#e5e7eb 0%,#d1d5db 100%)"><span class="photo-block__label" style="color:rgba(0,0,0,.2);border-color:rgba(0,0,0,.1)">Patrick beim Personal Training</span></div>
+            <div class="photo-block__overlay"></div>
+            <span class="photo-block__caption">Patrick Detta &bull; Personal Training</span>
+        </div>
+    </div>
+
+    <!-- Warum die Meisten scheitern -->
+    <div class="text-center">
+        <div class="scheitern__pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l2 2"/></svg>
+            Das Problem
+        </div>
+        <h2 class="section-title" style="margin-top:1rem">Warum die Meisten <em>scheitern..</em></h2>
+    </div>
+    <div class="scheitern__grid">
+        <div class="scheitern__card">
+            <div class="scheitern__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#E84C3D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="scheitern__title">Keine Zeit</h3>
+            <p class="scheitern__text">Jeder von uns hat die gleiche Menge an Zeit zur Verfügung. Du kannst deine Zeit entweder verbringen oder sie investieren.</p>
+        </div>
+        <div class="scheitern__card">
+            <div class="scheitern__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#E84C3D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3 class="scheitern__title">Kein individuelles System</h3>
+            <p class="scheitern__text">Kein auf dich angepasstes System, sondern Methoden, die nicht nachhaltig funktionieren, da die Individualität fehlt.</p>
+        </div>
+        <div class="scheitern__card">
+            <div class="scheitern__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#E84C3D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3 class="scheitern__title">Keine Vertrauensperson</h3>
+            <p class="scheitern__text">Keine Ansprechperson mit echter Expertise, die alle Bereiche abdeckt, statt sich rein auf das Training zu fokussieren.</p>
+        </div>
+        <div class="scheitern__card">
+            <div class="scheitern__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#E84C3D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            </div>
+            <h3 class="scheitern__title">Null Energie</h3>
+            <p class="scheitern__text">Das Nachmittagstief zerstört deine Produktivität. Du bist erschöpft, obwohl der Tag noch lang ist.</p>
+        </div>
+        <div class="scheitern__card">
+            <div class="scheitern__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#E84C3D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="scheitern__title">Gescheiterte Versuche</h3>
+            <p class="scheitern__text">Low Carb, Intervallfasten, Shakes &mdash; alles probiert, nichts hat nachhaltig funktioniert.</p>
+        </div>
+        <div class="scheitern__card">
+            <div class="scheitern__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#E84C3D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="scheitern__title">Teure Fehlinvestitionen</h3>
+            <p class="scheitern__text">Gym-Verträge, Supplements, Online-Kurse &mdash; Geld ausgegeben, aber kein nachhaltiges Ergebnis.</p>
+        </div>
+    </div>
+
+    <div style="text-align:center;margin-top:2.5rem"><a href="#kontakt" class="btn btn--red">Jetzt kostenlos beraten lassen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+</div>
+</section>
+
+<!-- ═══════════ TRANSFORMATIONEN ═══════════ -->
+<section class="section" id="ergebnisse">
+<div class="container">
+    <p class="section-label">Echte Ergebnisse</p>
+    <h2 class="section-title">Vorher &mdash; Nachher.<br><em>Keine Ausreden, nur Ergebnisse.</em></h2>
+    <p class="section-desc">Diese Unternehmer und Führungskräfte haben es geschafft. Mit einem System, das in ihren Alltag passt.</p>
+    <!-- BILDER: Echte Vorher-Nachher Fotos — tf-stefan-vorher.jpg / tf-stefan-nachher.jpg etc. -->
+    <div class="transforms__grid">
+        <div class="tf-card">
+            <div class="tf-card__images">
+                <div class="tf-card__img tf-card__img--before" style="background:url('images/tf-stefan-vorher.jpg') center/cover">Vorher</div>
+                <div class="tf-card__img tf-card__img--after" style="background:url('images/tf-stefan-nachher.jpg') center/cover">Nachher</div>
+                <div class="tf-card__arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            </div>
+            <div class="tf-card__info">
+                <div class="tf-card__name">Stefan K., 47</div>
+                <div class="tf-card__meta">Geschäftsführer, Freiburg</div>
+                <div class="tf-card__result">-12kg in 10 Wochen</div>
+            </div>
+        </div>
+        <div class="tf-card">
+            <div class="tf-card__images">
+                <div class="tf-card__img tf-card__img--before" style="background:url('images/tf-stefan-vorher.jpg') center/cover">Vorher</div>
+                <div class="tf-card__img tf-card__img--after" style="background:url('images/tf-stefan-nachher.jpg') center/cover">Nachher</div>
+                <div class="tf-card__arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            </div>
+            <div class="tf-card__info">
+                <div class="tf-card__name">Markus R., 42</div>
+                <div class="tf-card__meta">Selbstständig, Basel</div>
+                <div class="tf-card__result">-9kg in 8 Wochen</div>
+            </div>
+        </div>
+        <div class="tf-card">
+            <div class="tf-card__images">
+                <div class="tf-card__img tf-card__img--before" style="background:url('images/tf-stefan-vorher.jpg') center/cover">Vorher</div>
+                <div class="tf-card__img tf-card__img--after" style="background:url('images/tf-stefan-nachher.jpg') center/cover">Nachher</div>
+                <div class="tf-card__arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            </div>
+            <div class="tf-card__info">
+                <div class="tf-card__name">Thomas W., 51</div>
+                <div class="tf-card__meta">Führungskraft, Stuttgart</div>
+                <div class="tf-card__result">-15kg in 12 Wochen</div>
+            </div>
+        </div>
+        <div class="tf-card">
+            <div class="tf-card__images">
+                <div class="tf-card__img tf-card__img--before" style="background:url('images/tf-stefan-vorher.jpg') center/cover">Vorher</div>
+                <div class="tf-card__img tf-card__img--after" style="background:url('images/tf-stefan-nachher.jpg') center/cover">Nachher</div>
+                <div class="tf-card__arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            </div>
+            <div class="tf-card__info">
+                <div class="tf-card__name">Andreas B., 39</div>
+                <div class="tf-card__meta">Unternehmer, Zürich</div>
+                <div class="tf-card__result">-8kg in 8 Wochen</div>
+            </div>
+        </div>
+        <div class="tf-card">
+            <div class="tf-card__images">
+                <div class="tf-card__img tf-card__img--before" style="background:url('images/tf-stefan-vorher.jpg') center/cover">Vorher</div>
+                <div class="tf-card__img tf-card__img--after" style="background:url('images/tf-stefan-nachher.jpg') center/cover">Nachher</div>
+                <div class="tf-card__arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            </div>
+            <div class="tf-card__info">
+                <div class="tf-card__name">Michael S., 44</div>
+                <div class="tf-card__meta">CEO, München</div>
+                <div class="tf-card__result">-11kg in 10 Wochen</div>
+            </div>
+        </div>
+        <div class="tf-card">
+            <div class="tf-card__images">
+                <div class="tf-card__img tf-card__img--before" style="background:url('images/tf-stefan-vorher.jpg') center/cover">Vorher</div>
+                <div class="tf-card__img tf-card__img--after" style="background:url('images/tf-stefan-nachher.jpg') center/cover">Nachher</div>
+                <div class="tf-card__arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            </div>
+            <div class="tf-card__info">
+                <div class="tf-card__name">Jürgen H., 53</div>
+                <div class="tf-card__meta">Abteilungsleiter, Karlsruhe</div>
+                <div class="tf-card__result">-10kg in 9 Wochen</div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- ═══════════ VIDEOS + GOOGLE REVIEWS (LIGHT) ═══════════ -->
+<section class="section section--light">
+<div class="container">
+    <div class="text-center">
+        <p class="section-label">Video-Erfahrungen</p>
+        <h2 class="section-title">Höre es direkt von <em>meinen Kunden.</em></h2>
+    </div>
+    <!-- Wistia embed scripts -->
+    <script src="https://fast.wistia.com/embed/g5qvy89isd.js" async type="module"></script>
+    <script src="https://fast.wistia.com/embed/d9robzlqip.js" async type="module"></script>
+    <style>
+        wistia-player[media-id='g5qvy89isd']:not(:defined){background:center/contain no-repeat url('https://fast.wistia.com/embed/medias/g5qvy89isd/swatch');display:block;filter:blur(5px);padding-top:56.25%}
+        wistia-player[media-id='d9robzlqip']:not(:defined){background:center/contain no-repeat url('https://fast.wistia.com/embed/medias/d9robzlqip/swatch');display:block;filter:blur(5px);padding-top:56.25%}
+    </style>
+
+    <div class="videos__grid">
+
+        <!-- Video 1: Giuliana — echtes Wistia-Interview -->
+        <div class="video-card">
+            <div class="video-card__embed">
+                <wistia-player media-id="g5qvy89isd" aspect="1.7777777777777777" style="width:100%;height:100%"></wistia-player>
+            </div>
+            <div class="video-card__info">
+                <div class="video-card__name">Giuliana, 36 &mdash; Selbständige Kosmetikerin, 2 Kinder</div>
+                <div class="video-card__results">
+                    <span class="video-card__tag">+3 kg Muskel in 3 Monaten</span>
+                    <span class="video-card__tag">+10 cm Umfang Beine &amp; Po</span>
+                    <span class="video-card__tag">Po runder &amp; definierter</span>
+                    <span class="video-card__tag">Mehr Power &amp; Zufriedenheit</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video 2: Marius — echtes Wistia-Interview -->
+        <div class="video-card">
+            <div class="video-card__embed">
+                <wistia-player media-id="d9robzlqip" aspect="1.7777777777777777" style="width:100%;height:100%"></wistia-player>
+            </div>
+            <div class="video-card__info">
+                <div class="video-card__name">Marius, 36 &mdash; Finanzberater, 13 Jahre Bürojob</div>
+                <div class="video-card__results">
+                    <span class="video-card__tag">&#8722;13 kg (104 &rarr; 91 kg)</span>
+                    <span class="video-card__tag">Ernährung einfach in Alltag integriert</span>
+                    <span class="video-card__tag">Intensiv betreut ab Tag 1</span>
+                    <span class="video-card__tag">Langfristig &amp; nachhaltig</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="reviews-row">
+        <div class="review-badge">
+            <div class="review-badge__stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <div class="review-badge__score">4.9</div>
+            <div><div class="review-badge__text"><strong>Google Bewertungen</strong>50+ verifizierte Reviews</div></div>
+        </div>
+        <div class="review-badge">
+            <div class="review-badge__stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <div class="review-badge__score">4.8</div>
+            <div><div class="review-badge__text"><strong>Trustpilot</strong>Verifizierte Erfahrungen</div></div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- ═══════════ DAS PD-SYSTEM (5 Säulen Timeline) ═══════════ -->
+<section class="section" id="arbeitsweise">
+<div class="container">
+    <div class="text-center">
+        <p class="section-label">Das PD-System</p>
+        <h2 class="section-title">5 Säulen für deine<br><em>nachhaltige Transformation.</em></h2>
+        <p class="section-desc mx-auto">Kein Schema F. Ein ganzheitliches System aus 5 Säulen, das auf deinen Alltag als Unternehmer zugeschnitten ist.</p>
+    </div>
+    <div class="timeline">
+        <div class="timeline__item">
+            <div class="timeline__node"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v1m0 16v1m-9-9H2m20 0h-1m-2.6-6.4l-.7.7M6.3 17.7l-.7.7m12.8 0l-.7-.7M6.3 6.3l-.7-.7" stroke="#E84C3D" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="#E84C3D" stroke-width="2"/></svg></div>
+            <div class="timeline__label">Säule 1</div>
+            <h3 class="timeline__title">Ernährung ohne Verbote</h3>
+            <p class="timeline__text">Flexible Ernährung, die in deinen Alltag passt. Kein Kalorienzählen, kein Hungern &mdash; auch nicht beim Business-Dinner.</p>
+        </div>
+        <div class="timeline__item">
+            <div class="timeline__node"><svg viewBox="0 0 24 24" fill="none"><path d="M18 20V10M12 20V4M6 20v-6" stroke="#E84C3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="timeline__label">Säule 2</div>
+            <h3 class="timeline__title">Effizientes Training</h3>
+            <p class="timeline__text">Maximale Ergebnisse in minimaler Zeit. 3x pro Woche, strukturiert und an dein Level angepasst &mdash; Gym, Home oder Hotel.</p>
+        </div>
+        <div class="timeline__item">
+            <div class="timeline__node"><svg viewBox="0 0 24 24" fill="none"><path d="M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M16 12h6M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24" stroke="#E84C3D" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <div class="timeline__label">Säule 3</div>
+            <h3 class="timeline__title">Regeneration & Schlaf</h3>
+            <p class="timeline__text">Dein Körper baut sich in der Erholung um. Optimierte Schlafqualität und Stressmanagement für mehr Energie im Alltag.</p>
+        </div>
+        <div class="timeline__item">
+            <div class="timeline__node"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z" stroke="#E84C3D" stroke-width="2"/><path d="M8 14s1.5 2 4 2 4-2 4-2" stroke="#E84C3D" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="10" r="1" fill="#E84C3D"/><circle cx="15" cy="10" r="1" fill="#E84C3D"/></svg></div>
+            <div class="timeline__label">Säule 4</div>
+            <h3 class="timeline__title">Mindset & Gewohnheiten</h3>
+            <p class="timeline__text">Nachhaltige Veränderung beginnt im Kopf. Wir bauen Routinen auf, die automatisch laufen &mdash; kein Willenskraft-Kampf.</p>
+        </div>
+        <div class="timeline__item">
+            <div class="timeline__node"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#E84C3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="timeline__label">Säule 5</div>
+            <h3 class="timeline__title">Persönliche Betreuung</h3>
+            <p class="timeline__text">App-Coaching, wöchentliche 1:1 Calls und WhatsApp-Support. Du bist nie allein &mdash; dein Coach ist immer für dich da.</p>
+        </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem"><a href="#kontakt" class="btn btn--red">Jetzt Erstgespräch buchen <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+</div>
+</section>
+
+<!-- ═══════════ 3-SPALTEN VERGLEICH ═══════════ -->
+<section class="section" style="background:#070707;position:relative;overflow:hidden">
+<div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:72px 72px;pointer-events:none"></div>
+<div class="container" style="position:relative;z-index:1">
+    <div class="text-center">
+        <p class="section-label" style="font-style:italic;font-family:var(--font-display)">1:1 Coaching mit Patrick Detta,</p>
+        <h2 class="section-title">statt liebloses Coaching<br><em>und gescheiterte Diäten.</em></h2>
+        <p class="section-desc mx-auto">Bei Patrick bist du mehr als nur ein abgeschlossener Kunde. Deine Ergebnisse sind uns wichtig &mdash; und wir gehen die Extrameile, um sie mit dir zu erreichen.</p>
+    </div>
+    <!-- BILD: Breites Stimmungsbild — Patrick bei der Arbeit mit Kunden im Studio -->
+    <div style="margin:2.5rem auto 0;max-width:640px;aspect-ratio:3/2;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);position:relative">
+        <div class="img-placeholder" style="background:url('images/studio-wide.jpg') center/cover;width:100%;height:100%">Patrick im Studio mit Kunden</div>
+        <!-- Red fade corners -->
+        <div style="position:absolute;inset:0;pointer-events:none;border-radius:var(--radius-lg)">
+            <!-- links oben -->
+            <div style="position:absolute;top:-20%;left:-20%;width:55%;height:55%;background:radial-gradient(ellipse at center,rgba(232,76,61,.32) 0%,transparent 70%)"></div>
+            <!-- rechts oben -->
+            <div style="position:absolute;top:-20%;right:-20%;width:55%;height:55%;background:radial-gradient(ellipse at center,rgba(232,76,61,.28) 0%,transparent 70%)"></div>
+        </div>
+    </div>
+    <div class="compare3-wrap">
+    <div class="compare3">
+        <!-- Col 1: 0815 Coach -->
+        <div class="compare3__col compare3__col--left">
+            <div class="compare3__heading"><svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="#6b7280" stroke-width="1.5"/><circle cx="9" cy="7" r="4" stroke="#6b7280" stroke-width="1.5"/></svg>0815 Coach</div>
+            <div class="compare3__list">
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#4b5563" stroke-width="1.2"/><path d="M15 9l-6 6M9 9l6 6" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/></svg>Unerfahrene Coaches</div>
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#4b5563" stroke-width="1.2"/><path d="M15 9l-6 6M9 9l6 6" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/></svg>Minimale Weiterbildung</div>
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#4b5563" stroke-width="1.2"/><path d="M15 9l-6 6M9 9l6 6" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/></svg>Kein Support</div>
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#4b5563" stroke-width="1.2"/><path d="M15 9l-6 6M9 9l6 6" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/></svg>Kcal zählen &amp; Cardio</div>
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#4b5563" stroke-width="1.2"/><path d="M15 9l-6 6M9 9l6 6" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/></svg>Kein datenbasierter Ansatz</div>
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#4b5563" stroke-width="1.2"/><path d="M15 9l-6 6M9 9l6 6" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/></svg>Wenig Erfolgsstories</div>
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#4b5563" stroke-width="1.2"/><path d="M15 9l-6 6M9 9l6 6" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/></svg>Jeder wird betreut</div>
+            </div>
+        </div>
+        <!-- Col 2: Patrick Detta (Hero — taller, dashed red border) -->
+        <div class="compare3__col compare3__col--hero">
+            <div class="compare3__badge"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#E84C3D" opacity=".7"/></svg>EMPFOHLEN</div>
+            <div class="compare3__heading" style="font-size:1.15rem">
+                <svg viewBox="0 0 24 24" fill="none" style="width:22px;height:22px"><circle cx="12" cy="12" r="10" stroke="#E84C3D" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#E84C3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Patrick Detta
+            </div>
+            <div class="compare3__list">
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C7 4 9 7 12 7s5-3 7.5-3a2.5 2.5 0 0 1 0 5H18" stroke="#E84C3D" stroke-width="1.5" stroke-linecap="round"/><path d="M12 7v15" stroke="#E84C3D" stroke-width="1.5"/><path d="M6 12h12" stroke="#E84C3D" stroke-width="1.5" stroke-linecap="round"/></svg>+10 Jahre Erfahrung und Track Record</div>
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><path d="M2 20h20" stroke="#E84C3D" stroke-width="1.5" stroke-linecap="round"/><path d="M5 20V9l7-5 7 5v11" stroke="#E84C3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 20v-5h6v5" stroke="#E84C3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>+100.000&euro; in Weiterbildung investiert</div>
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="#E84C3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>24/7 WhatsApp Support &amp; Hilfe</div>
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#E84C3D" stroke-width="1.5"/><path d="M12 16v-4" stroke="#E84C3D" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="8" r="0.5" fill="#E84C3D" stroke="#E84C3D" stroke-width="1"/></svg>Kontinuierliche Wissensvermittlung</div>
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><path d="M3 3v18h18" stroke="#E84C3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 16l4-8 4 4 5-9" stroke="#E84C3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Datenbasierter Ansatz (PD-System)</div>
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="#E84C3D" stroke-width="1.5"/><circle cx="9" cy="7" r="4" stroke="#E84C3D" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke="#E84C3D" stroke-width="1.5"/><path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="#E84C3D" stroke-width="1.5"/></svg>+200 Leben erfolgreich verändert</div>
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#E84C3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#E84C3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Ganzheitlich: Ernährung, Training, Mindset, Schlaf</div>
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="#E84C3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Die erfolgreichsten Unternehmer vertrauen Patrick</div>
+            </div>
+        </div>
+        <!-- Col 3: 0815 App -->
+        <div class="compare3__col compare3__col--right">
+            <div class="compare3__heading"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="#6b7280" stroke-width="1.5"/><line x1="12" y1="18" x2="12" y2="18" stroke="#6b7280" stroke-width="2" stroke-linecap="round"/></svg>0815 App</div>
+            <div class="compare3__list">
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#4b5563" stroke-width="1.2"/><path d="M15 9l-6 6M9 9l6 6" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/></svg>0815 Standard-Pläne</div>
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#4b5563" stroke-width="1.2"/><path d="M15 9l-6 6M9 9l6 6" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/></svg>Keine Individualisierung</div>
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#4b5563" stroke-width="1.2"/><path d="M15 9l-6 6M9 9l6 6" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/></svg>Motivationsprobleme</div>
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#4b5563" stroke-width="1.2"/><path d="M15 9l-6 6M9 9l6 6" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/></svg>Kein persönliches Feedback</div>
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#4b5563" stroke-width="1.2"/><path d="M15 9l-6 6M9 9l6 6" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/></svg>Technische Probleme</div>
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#4b5563" stroke-width="1.2"/><path d="M15 9l-6 6M9 9l6 6" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/></svg>Unpersönliche Erfahrung</div>
+                <div class="compare3__item"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#4b5563" stroke-width="1.2"/><path d="M15 9l-6 6M9 9l6 6" stroke="#4b5563" stroke-width="1.2" stroke-linecap="round"/></svg>Keine soziale Interaktion</div>
+            </div>
+        </div>
+    </div>
+    </div><!-- /compare3-wrap -->
+    <!-- Disclaimer -->
+    <div class="text-center" style="margin-top:2.5rem;max-width:600px;margin-left:auto;margin-right:auto">
+        <p style="font-size:.82rem;color:var(--gray-500);line-height:1.7"><strong style="color:var(--gray-300)">Disclaimer:</strong> Natürlich ist nicht jedes Coaching überlaufen und nicht jede App schlecht. Aber hunderte Gespräche mit frustrierten Unternehmern haben gezeigt: Der Markt braucht eine bessere Lösung. Patricks 1:1 Coaching ist die logische Antwort darauf.</p>
+    </div>
+    <div style="text-align:center;margin-top:2rem"><a href="#kontakt" class="btn btn--red">Jetzt Erstgespräch buchen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+</div>
+</section>
+
+<!-- ═══════════ BENTO BOX — WAS DICH ERWARTET ═══════════ -->
+<section class="section">
+<div class="container">
+    <div class="text-center">
+        <p class="section-label">Was dich erwartet</p>
+        <h2 class="section-title">Alles, was du brauchst &mdash; <em>in einem System.</em></h2>
+        <p class="section-desc mx-auto">Kein Rätselraten, kein Alleingang. Das PD-System gibt dir die Werkzeuge, die Struktur und die Betreuung für nachhaltige Ergebnisse.</p>
+    </div>
+
+    <!-- Top row: 2 large cards -->
+    <div class="bento">
+        <!-- Card 1: Ernährung — Animated macro bars -->
+        <div class="bento__card">
+            <div class="bento__visual" style="background:linear-gradient(135deg,#111 0%,#1a1a1a 100%)">
+                <svg class="bento-svg" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:90%;height:auto">
+                    <!-- Grid lines -->
+                    <line x1="40" y1="160" x2="300" y2="160" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
+                    <line x1="40" y1="120" x2="300" y2="120" stroke="rgba(255,255,255,.04)" stroke-width="1"/>
+                    <line x1="40" y1="80" x2="300" y2="80" stroke="rgba(255,255,255,.04)" stroke-width="1"/>
+                    <line x1="40" y1="40" x2="300" y2="40" stroke="rgba(255,255,255,.04)" stroke-width="1"/>
+                    <!-- Y-axis labels -->
+                    <text x="30" y="163" fill="rgba(255,255,255,.2)" font-size="8" text-anchor="end" font-family="Inter">0</text>
+                    <text x="30" y="83" fill="rgba(255,255,255,.2)" font-size="8" text-anchor="end" font-family="Inter">50</text>
+                    <!-- Bars -->
+                    <rect class="bento-bar bento-bar--1" x="55" y="120" width="28" height="40" rx="4" fill="#E84C3D"/>
+                    <rect class="bento-bar bento-bar--2" x="93" y="95" width="28" height="65" rx="4" fill="#2DD4BF"/>
+                    <rect class="bento-bar bento-bar--3" x="131" y="140" width="28" height="20" rx="4" fill="rgba(255,255,255,.12)"/>
+                    <rect class="bento-bar bento-bar--4" x="169" y="110" width="28" height="50" rx="4" fill="#E84C3D"/>
+                    <rect class="bento-bar bento-bar--5" x="207" y="115" width="28" height="45" rx="4" fill="#2DD4BF"/>
+                    <rect class="bento-bar bento-bar--6" x="245" y="105" width="28" height="55" rx="4" fill="#E84C3D"/>
+                    <!-- Labels -->
+                    <text x="69" y="175" fill="rgba(255,255,255,.15)" font-size="7" text-anchor="middle" font-family="Inter">Mo</text>
+                    <text x="107" y="175" fill="rgba(255,255,255,.15)" font-size="7" text-anchor="middle" font-family="Inter">Di</text>
+                    <text x="145" y="175" fill="rgba(255,255,255,.15)" font-size="7" text-anchor="middle" font-family="Inter">Mi</text>
+                    <text x="183" y="175" fill="rgba(255,255,255,.15)" font-size="7" text-anchor="middle" font-family="Inter">Do</text>
+                    <text x="221" y="175" fill="rgba(255,255,255,.15)" font-size="7" text-anchor="middle" font-family="Inter">Fr</text>
+                    <text x="259" y="175" fill="rgba(255,255,255,.15)" font-size="7" text-anchor="middle" font-family="Inter">Sa</text>
+                    <!-- Legend -->
+                    <rect x="55" y="15" width="8" height="8" rx="2" fill="#E84C3D"/>
+                    <text x="68" y="22" fill="rgba(255,255,255,.3)" font-size="8" font-family="Inter">Protein</text>
+                    <rect x="110" y="15" width="8" height="8" rx="2" fill="#2DD4BF"/>
+                    <text x="123" y="22" fill="rgba(255,255,255,.3)" font-size="8" font-family="Inter">Kohlenhydrate</text>
+                </svg>
+            </div>
+            <div class="bento__body">
+                <h3 class="bento__title">Ernährung ohne Verzicht</h3>
+                <p class="bento__text">Individueller Ernährungsplan mit Tracking &mdash; iss, was du liebst, und nimm trotzdem ab. Kein Kalorienzählen, keine Verbote.</p>
+            </div>
+        </div>
+
+        <!-- Card 2: Fahrplan — Animated timeline -->
+        <div class="bento__card">
+            <div class="bento__visual" style="background:linear-gradient(135deg,#111 0%,#1a1a1a 100%)">
+                <svg class="bento-svg" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:90%;height:auto">
+                    <!-- Month headers -->
+                    <text x="60" y="22" fill="rgba(255,255,255,.25)" font-size="9" font-weight="600" font-family="Inter">Woche 1-3</text>
+                    <text x="175" y="22" fill="rgba(255,255,255,.25)" font-size="9" font-weight="600" font-family="Inter">Woche 4-7</text>
+                    <text x="265" y="22" fill="rgba(255,255,255,.25)" font-size="9" font-weight="600" font-family="Inter">Woche 8-10</text>
+                    <!-- Timeline line -->
+                    <line x1="20" y1="40" x2="300" y2="40" stroke="rgba(232,76,61,.15)" stroke-width="2"/>
+                    <!-- Dots on timeline -->
+                    <circle cx="60" cy="40" r="5" fill="#E84C3D" opacity=".3"/>
+                    <circle cx="130" cy="40" r="5" fill="#E84C3D" opacity=".3"/>
+                    <circle cx="200" cy="40" r="5" fill="#E84C3D" opacity=".3"/>
+                    <circle cx="270" cy="40" r="5" fill="#E84C3D" opacity=".3"/>
+                    <!-- Active dot -->
+                    <circle cx="200" cy="40" r="8" fill="none" stroke="#E84C3D" stroke-width="1.5" opacity=".5"/>
+                    <circle cx="200" cy="40" r="4" fill="#E84C3D"/>
+                    <!-- Task nodes -->
+                    <g class="bento-node bento-node--1">
+                        <rect x="30" y="55" width="145" height="28" rx="8" fill="rgba(232,76,61,.08)" stroke="rgba(232,76,61,.12)" stroke-width="1"/>
+                        <circle cx="44" cy="69" r="4" fill="#E84C3D" opacity=".6"/>
+                        <text x="54" y="73" fill="rgba(255,255,255,.5)" font-size="8" font-family="Inter">Onboarding &amp; Ernährungsplan</text>
+                    </g>
+                    <g class="bento-node bento-node--2">
+                        <rect x="60" y="90" width="160" height="28" rx="8" fill="rgba(45,212,191,.06)" stroke="rgba(45,212,191,.1)" stroke-width="1"/>
+                        <circle cx="74" cy="104" r="4" fill="#2DD4BF" opacity=".6"/>
+                        <text x="84" y="108" fill="rgba(255,255,255,.5)" font-size="8" font-family="Inter">Trainingsplan &amp; Schlaf-Routine</text>
+                    </g>
+                    <g class="bento-node bento-node--3">
+                        <rect x="90" y="125" width="170" height="28" rx="8" fill="rgba(232,76,61,.08)" stroke="rgba(232,76,61,.12)" stroke-width="1"/>
+                        <circle cx="104" cy="139" r="4" fill="#E84C3D" opacity=".6"/>
+                        <text x="114" y="143" fill="rgba(255,255,255,.5)" font-size="8" font-family="Inter">Mindset-Coaching &amp; Optimierung</text>
+                    </g>
+                    <g class="bento-node bento-node--4">
+                        <rect x="155" y="158" width="140" height="22" rx="6" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
+                        <text x="175" y="173" fill="rgba(255,255,255,.2)" font-size="7" font-family="Inter">Langfristige Gewohnheiten</text>
+                    </g>
+                </svg>
+            </div>
+            <div class="bento__body">
+                <h3 class="bento__title">Schritt-für-Schritt Fahrplan</h3>
+                <p class="bento__text">Kein Overload, keine Verwirrung. Du bekommst einen klaren Plan, der dich Woche für Woche sicher ans Ziel führt.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom row: 3 smaller cards -->
+    <div class="bento bento--bottom">
+        <!-- Card 3: Schlaf — Gauge -->
+        <div class="bento__card">
+            <div class="bento__visual" style="background:linear-gradient(135deg,#111 0%,#1a1a1a 100%)">
+                <svg class="bento-svg" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:80%;height:auto">
+                    <defs>
+                        <linearGradient id="gaugeGrad" gradientUnits="userSpaceOnUse" x1="35" y1="110" x2="165" y2="110">
+                            <stop offset="0%" stop-color="#E84C3D"/>
+                            <stop offset="50%" stop-color="#f59e0b"/>
+                            <stop offset="100%" stop-color="#2DD4BF"/>
+                        </linearGradient>
+                    </defs>
+                    <!-- Label pill top center -->
+                    <rect x="62" y="8" width="76" height="24" rx="12" fill="rgba(45,212,191,.1)" stroke="rgba(45,212,191,.15)" stroke-width="1"/>
+                    <circle cx="79" cy="20" r="3.5" fill="#2DD4BF"/>
+                    <text x="90" y="24" fill="#2DD4BF" font-size="9" font-weight="600" font-family="Inter">Sleep</text>
+                    <!-- Gauge background arc (full semicircle) -->
+                    <path d="M35 110 A65 65 0 0 1 165 110" stroke="rgba(255,255,255,.06)" stroke-width="14" stroke-linecap="round" fill="none"/>
+                    <!-- Gauge colored arc — starts at score 60 (20% of 50-100 range), hover to score 90 (80%) -->
+                    <path class="bento-gauge-fill" d="M35 110 A65 65 0 0 1 165 110" stroke="url(#gaugeGrad)" stroke-width="14" stroke-linecap="round" fill="none" stroke-dasharray="204.2" stroke-dashoffset="163.4"/>
+                    <!-- Needle (pivots from arc center 100,110, points UP, CSS rotates it) -->
+                    <g class="bento-needle">
+                        <line x1="100" y1="110" x2="100" y2="48" stroke="rgba(255,255,255,.5)" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="100" cy="110" r="5" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.18)" stroke-width="1"/>
+                    </g>
+                    <!-- Score: 60 (default, red/bad) -->
+                    <text class="bento-score-bad" x="100" y="100" fill="#E84C3D" font-size="32" font-weight="800" text-anchor="middle" font-family="Phudu,cursive">60</text>
+                    <!-- Score: 90 (hover, green/good) -->
+                    <text class="bento-score-good" x="100" y="100" fill="#2DD4BF" font-size="32" font-weight="800" text-anchor="middle" font-family="Phudu,cursive">90</text>
+                    <text x="100" y="118" fill="rgba(255,255,255,.3)" font-size="9" text-anchor="middle" font-family="Inter">Sleep Score</text>
+                </svg>
+            </div>
+            <div class="bento__body">
+                <h3 class="bento__title">Schlaf &amp; Regeneration</h3>
+                <p class="bento__text">Wir optimieren deinen Schlaf, damit du jeden Tag erholt und energiegeladen aufwachst.</p>
+            </div>
+        </div>
+
+        <!-- Card 4: WhatsApp Support — Chat bubbles -->
+        <div class="bento__card">
+            <div class="bento__visual" style="background:linear-gradient(135deg,#111 0%,#1a1a1a 100%)">
+                <svg class="bento-svg" viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:75%;height:auto">
+                    <!-- Chat bubble 1 (user) -->
+                    <g class="bento-bubble bento-bubble--1">
+                        <rect x="55" y="18" width="135" height="32" rx="12" fill="rgba(232,76,61,.1)" stroke="rgba(232,76,61,.12)" stroke-width="1"/>
+                        <text x="68" y="38" fill="rgba(255,255,255,.5)" font-size="8" font-family="Inter">Kann ich abends Pasta essen?</text>
+                    </g>
+                    <!-- Chat bubble 2 (coach) -->
+                    <g class="bento-bubble bento-bubble--2">
+                        <rect x="10" y="60" width="150" height="42" rx="12" fill="rgba(45,212,191,.06)" stroke="rgba(45,212,191,.1)" stroke-width="1"/>
+                        <circle cx="26" cy="75" r="9" fill="rgba(45,212,191,.15)"/>
+                        <text x="24" y="78" fill="#2DD4BF" font-size="8" text-anchor="middle" font-weight="700" font-family="Inter">P</text>
+                        <text x="40" y="78" fill="rgba(255,255,255,.5)" font-size="8" font-family="Inter">Klar! Hier ist dein Plan</text>
+                        <text x="40" y="92" fill="rgba(255,255,255,.5)" font-size="8" font-family="Inter">angepasst für heute Abend </text>
+                    </g>
+                    <!-- Chat bubble 3 (user) -->
+                    <g class="bento-bubble bento-bubble--3">
+                        <rect x="65" y="112" width="125" height="32" rx="12" fill="rgba(232,76,61,.1)" stroke="rgba(232,76,61,.12)" stroke-width="1"/>
+                        <text x="78" y="132" fill="rgba(255,255,255,.5)" font-size="8" font-family="Inter">Danke, mega schnell! </text>
+                    </g>
+                    <!-- Time stamps -->
+                    <text x="180" y="14" fill="rgba(255,255,255,.12)" font-size="7" font-family="Inter">21:34</text>
+                    <text x="152" y="56" fill="rgba(255,255,255,.12)" font-size="7" font-family="Inter">21:35</text>
+                    <text x="180" y="108" fill="rgba(255,255,255,.12)" font-size="7" font-family="Inter">21:36</text>
+                </svg>
+            </div>
+            <div class="bento__body">
+                <h3 class="bento__title">WhatsApp-Support 24/7</h3>
+                <p class="bento__text">Frage jederzeit &mdash; Patrick antwortet persönlich. Kein Bot, keine Warteschleife.</p>
+            </div>
+        </div>
+
+        <!-- Card 5: Ergebnisse — Weight graph -->
+        <div class="bento__card">
+            <div class="bento__visual" style="background:linear-gradient(135deg,#111 0%,#1a1a1a 100%)">
+                <svg class="bento-svg" viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:75%;height:auto">
+                    <!-- Grid -->
+                    <line x1="25" y1="130" x2="185" y2="130" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
+                    <line x1="25" y1="100" x2="185" y2="100" stroke="rgba(255,255,255,.04)" stroke-width="1"/>
+                    <line x1="25" y1="70" x2="185" y2="70" stroke="rgba(255,255,255,.04)" stroke-width="1"/>
+                    <line x1="25" y1="40" x2="185" y2="40" stroke="rgba(255,255,255,.04)" stroke-width="1"/>
+                    <!-- Y labels -->
+                    <text x="18" y="44" fill="rgba(255,255,255,.15)" font-size="7" text-anchor="end" font-family="Inter">92</text>
+                    <text x="18" y="74" fill="rgba(255,255,255,.15)" font-size="7" text-anchor="end" font-family="Inter">88</text>
+                    <text x="18" y="104" fill="rgba(255,255,255,.15)" font-size="7" text-anchor="end" font-family="Inter">84</text>
+                    <text x="18" y="134" fill="rgba(255,255,255,.15)" font-size="7" text-anchor="end" font-family="Inter">80</text>
+                    <!-- X labels -->
+                    <text x="35" y="145" fill="rgba(255,255,255,.12)" font-size="7" text-anchor="middle" font-family="Inter">W1</text>
+                    <text x="70" y="145" fill="rgba(255,255,255,.12)" font-size="7" text-anchor="middle" font-family="Inter">W3</text>
+                    <text x="110" y="145" fill="rgba(255,255,255,.12)" font-size="7" text-anchor="middle" font-family="Inter">W5</text>
+                    <text x="145" y="145" fill="rgba(255,255,255,.12)" font-size="7" text-anchor="middle" font-family="Inter">W7</text>
+                    <text x="178" y="145" fill="rgba(255,255,255,.12)" font-size="7" text-anchor="middle" font-family="Inter">W10</text>
+                    <!-- Area fill -->
+                    <path d="M35,42 Q55,48 70,58 T110,78 T145,105 T178,125 L178,130 L35,130 Z" fill="url(#areaGrad)" opacity=".3"/>
+                    <defs><linearGradient id="areaGrad" x1="100" y1="42" x2="100" y2="130"><stop offset="0%" stop-color="#E84C3D" stop-opacity=".3"/><stop offset="100%" stop-color="#E84C3D" stop-opacity="0"/></linearGradient></defs>
+                    <!-- Line -->
+                    <path class="bento-graph-line" d="M35,42 Q55,48 70,58 T110,78 T145,105 T178,125" stroke="#E84C3D" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                    <!-- End dot -->
+                    <circle class="bento-graph-dot" cx="178" cy="125" r="5" fill="#E84C3D"/>
+                    <circle class="bento-graph-dot" cx="178" cy="125" r="8" fill="none" stroke="#E84C3D" stroke-width="1" opacity=".4"/>
+                    <!-- Result label -->
+                    <rect class="bento-graph-dot" x="140" y="10" width="52" height="22" rx="6" fill="rgba(232,76,61,.1)" stroke="rgba(232,76,61,.15)" stroke-width="1"/>
+                    <text class="bento-graph-dot" x="166" y="25" fill="#E84C3D" font-size="9" font-weight="700" text-anchor="middle" font-family="Phudu,cursive">&minus;12 kg</text>
+                    <!-- Start label -->
+                    <text x="35" y="36" fill="rgba(255,255,255,.2)" font-size="7" font-family="Inter">92 kg</text>
+                </svg>
+            </div>
+            <div class="bento__body">
+                <h3 class="bento__title">Messbare Ergebnisse</h3>
+                <p class="bento__text">Dein Fortschritt wird sichtbar &mdash; Woche für Woche. Kein Raten, nur Daten und echte Resultate.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video card: full width below bento grid -->
+    <!-- VIDEO: Stummes Loop-Video von Patrick beim Training im Studio — studio-loop.mp4 -->
+    <div style="margin-top:1.25rem">
+        <div class="bento__card" style="display:grid;grid-template-columns:1.2fr 1fr;overflow:hidden">
+            <div class="bento__video-wrap" style="aspect-ratio:16/9">
+                <video src="images/studio-loop.mp4" autoplay loop muted playsinline style="width:100%;height:100%;object-fit:cover;display:block"></video>
+                <div class="bento__video-overlay"></div>
+                <div class="bento__video-badge">Einblicke aus dem Studio</div>
+            </div>
+            <div class="bento__body" style="display:flex;flex-direction:column;justify-content:center;padding:2rem 2.5rem">
+                <h3 class="bento__title" style="font-size:1.3rem">Persönlich. Vor Ort. Oder digital.</h3>
+                <p class="bento__text" style="margin-bottom:1.25rem">Ob im Studio in Freiburg oder per Video-Call &mdash; Patrick ist dein Coach an deiner Seite. Kein anonymer Online-Kurs, sondern echtes 1:1 Coaching mit einem Menschen, der deinen Erfolg will.</p>
+                <a href="#kontakt" class="btn btn--red" style="width:fit-content">Erstgespräch vereinbaren <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- ═══════════ KONTINUIERLICHE OPTIMIERUNG ═══════════ -->
+<section class="section flow">
+<div class="flow__grid-bg"></div>
+<div class="flow__glow"></div>
+<div class="container">
+    <div class="flow__inner">
+
+        <!-- Unified top SVG: icons + curves + convergence point -->
+        <div class="flow__diagram">
+            <svg viewBox="0 0 800 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="streakGrad" x1="400" y1="250" x2="400" y2="310"><stop offset="0%" stop-color="#E84C3D" stop-opacity=".7"/><stop offset="100%" stop-color="#E84C3D" stop-opacity="0"/></linearGradient>
+                    <radialGradient id="dotGlow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#E84C3D" stop-opacity=".6"/><stop offset="100%" stop-color="#E84C3D" stop-opacity="0"/></radialGradient>
+                    <filter id="glow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                </defs>
+
+                <!-- Icon circle 1: Clipboard/Test (left) at x=200 -->
+                <circle cx="200" cy="55" r="42" fill="rgba(232,76,61,.06)" stroke="rgba(232,76,61,.15)" stroke-width="1.2"/>
+                <circle cx="200" cy="55" r="52" fill="none" stroke="rgba(232,76,61,.06)" stroke-width="1"/>
+                <svg x="175" y="30" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#E84C3D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+                    <rect x="9" y="3" width="6" height="4" rx="1"/>
+                    <path d="M9 14l2 2 4-4"/>
+                </svg>
+
+                <!-- Icon circle 2: Analytics (center) at x=400 -->
+                <circle cx="400" cy="55" r="42" fill="rgba(232,76,61,.06)" stroke="rgba(232,76,61,.15)" stroke-width="1.2"/>
+                <circle cx="400" cy="55" r="52" fill="none" stroke="rgba(232,76,61,.06)" stroke-width="1"/>
+                <svg x="375" y="30" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#E84C3D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" opacity=".4"/>
+                    <path d="M12 2a10 10 0 0 1 10 10"/>
+                    <path d="M16 8v4h4"/>
+                    <path d="M12 12l4-4"/>
+                </svg>
+
+                <!-- Icon circle 3: Rocket (right) at x=600 -->
+                <circle cx="600" cy="55" r="42" fill="rgba(232,76,61,.06)" stroke="rgba(232,76,61,.15)" stroke-width="1.2"/>
+                <circle cx="600" cy="55" r="52" fill="none" stroke="rgba(232,76,61,.06)" stroke-width="1"/>
+                <svg x="575" y="30" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#E84C3D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                    <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+                    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+                </svg>
+
+                <!-- Dashed curves from icons to center convergence -->
+                <path id="pathLeft" d="M200,100 C200,165 400,175 400,242" stroke="rgba(232,76,61,.18)" stroke-width="1.5" stroke-dasharray="6 4" fill="none"/>
+                <path id="pathCenter" d="M400,100 C400,155 400,185 400,242" stroke="rgba(232,76,61,.22)" stroke-width="1.5" stroke-dasharray="6 4" fill="none"/>
+                <path id="pathRight" d="M600,100 C600,165 400,175 400,242" stroke="rgba(232,76,61,.18)" stroke-width="1.5" stroke-dasharray="6 4" fill="none"/>
+
+                <!-- Convergence point with glow -->
+                <circle cx="400" cy="242" r="16" fill="url(#dotGlow)"/>
+                <circle cx="400" cy="242" r="5" fill="#E84C3D" filter="url(#glow)"/>
+                <circle cx="400" cy="242" r="11" fill="none" stroke="rgba(232,76,61,.2)" stroke-width="1"/>
+
+                <!-- Red streak downward -->
+                <rect x="397.5" y="250" width="5" height="60" rx="2.5" fill="url(#streakGrad)"/>
+
+                <!-- Animated particles flowing down left path -->
+                <circle r="3" fill="#E84C3D" opacity=".8" filter="url(#glow)">
+                    <animateMotion dur="3s" repeatCount="indefinite" path="M200,100 C200,165 400,175 400,242"/>
+                    <animate attributeName="opacity" values=".2;.9;.2" dur="3s" repeatCount="indefinite"/>
+                </circle>
+                <circle r="2.5" fill="#E84C3D" opacity=".6" filter="url(#glow)">
+                    <animateMotion dur="3s" begin="1.5s" repeatCount="indefinite" path="M200,100 C200,165 400,175 400,242"/>
+                    <animate attributeName="opacity" values=".1;.7;.1" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+                </circle>
+
+                <!-- Animated particles flowing down center path -->
+                <circle r="3" fill="#E84C3D" opacity=".8" filter="url(#glow)">
+                    <animateMotion dur="2.5s" repeatCount="indefinite" path="M400,100 C400,155 400,185 400,242"/>
+                    <animate attributeName="opacity" values=".2;1;.2" dur="2.5s" repeatCount="indefinite"/>
+                </circle>
+                <circle r="2.5" fill="#E84C3D" opacity=".5" filter="url(#glow)">
+                    <animateMotion dur="2.5s" begin="1.2s" repeatCount="indefinite" path="M400,100 C400,155 400,185 400,242"/>
+                    <animate attributeName="opacity" values=".1;.7;.1" dur="2.5s" begin="1.2s" repeatCount="indefinite"/>
+                </circle>
+
+                <!-- Animated particles flowing down right path -->
+                <circle r="3" fill="#E84C3D" opacity=".8" filter="url(#glow)">
+                    <animateMotion dur="3s" begin="0.8s" repeatCount="indefinite" path="M600,100 C600,165 400,175 400,242"/>
+                    <animate attributeName="opacity" values=".2;.9;.2" dur="3s" begin="0.8s" repeatCount="indefinite"/>
+                </circle>
+                <circle r="2.5" fill="#E84C3D" opacity=".6" filter="url(#glow)">
+                    <animateMotion dur="3s" begin="2.3s" repeatCount="indefinite" path="M600,100 C600,165 400,175 400,242"/>
+                    <animate attributeName="opacity" values=".1;.7;.1" dur="3s" begin="2.3s" repeatCount="indefinite"/>
+                </circle>
+            </svg>
+        </div>
+
+        <!-- Center text -->
+        <div class="flow__center">
+            <h2 class="flow__title">Kontinuierliche <em>Optimierung.</em></h2>
+            <p class="flow__quote">&bdquo;Entscheidend ist nicht, was du einmal tust, sondern das, was du kontinuierlich verbesserst und zur Gewohnheit machst.&ldquo;</p>
+        </div>
+
+        <!-- Bottom SVG connector: center → 3 branches -->
+        <div class="flow__connector-bottom">
+            <svg viewBox="0 0 800 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="glow2"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                </defs>
+                <!-- Vertical from center -->
+                <path id="pathDown" d="M400,0 L400,45" stroke="rgba(232,76,61,.22)" stroke-width="1.5" stroke-dasharray="6 4"/>
+                <!-- Center junction dot -->
+                <circle cx="400" cy="45" r="4" fill="#E84C3D" filter="url(#glow2)"/>
+                <!-- Horizontal bar -->
+                <line x1="133" y1="45" x2="667" y2="45" stroke="rgba(232,76,61,.15)" stroke-width="1.5" stroke-dasharray="6 4"/>
+                <!-- Branch dots -->
+                <circle cx="133" cy="45" r="3.5" fill="#E84C3D" filter="url(#glow2)"/>
+                <circle cx="667" cy="45" r="3.5" fill="#E84C3D" filter="url(#glow2)"/>
+                <!-- Vertical drops -->
+                <path id="pathDrop1" d="M133,48 L133,105" stroke="rgba(232,76,61,.15)" stroke-width="1.5" stroke-dasharray="6 4"/>
+                <path id="pathDrop2" d="M400,48 L400,105" stroke="rgba(232,76,61,.2)" stroke-width="1.5" stroke-dasharray="6 4"/>
+                <path id="pathDrop3" d="M667,48 L667,105" stroke="rgba(232,76,61,.15)" stroke-width="1.5" stroke-dasharray="6 4"/>
+                <!-- Bottom dots -->
+                <circle cx="133" cy="105" r="3" fill="#E84C3D" opacity=".6" filter="url(#glow2)"/>
+                <circle cx="400" cy="105" r="3" fill="#E84C3D" opacity=".6" filter="url(#glow2)"/>
+                <circle cx="667" cy="105" r="3" fill="#E84C3D" opacity=".6" filter="url(#glow2)"/>
+
+                <!-- Animated particles branching out -->
+                <circle r="2.5" fill="#E84C3D" opacity=".7" filter="url(#glow2)">
+                    <animateMotion dur="2s" repeatCount="indefinite" path="M400,0 L400,45 L133,45 L133,105"/>
+                    <animate attributeName="opacity" values=".2;.8;.2" dur="2s" repeatCount="indefinite"/>
+                </circle>
+                <circle r="2.5" fill="#E84C3D" opacity=".7" filter="url(#glow2)">
+                    <animateMotion dur="1.5s" begin="0.3s" repeatCount="indefinite" path="M400,0 L400,45 L400,105"/>
+                    <animate attributeName="opacity" values=".2;.9;.2" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+                </circle>
+                <circle r="2.5" fill="#E84C3D" opacity=".7" filter="url(#glow2)">
+                    <animateMotion dur="2s" begin="0.6s" repeatCount="indefinite" path="M400,0 L400,45 L667,45 L667,105"/>
+                    <animate attributeName="opacity" values=".2;.8;.2" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+                </circle>
+            </svg>
+        </div>
+
+        <!-- Bottom 3 cards -->
+        <div class="flow__cards">
+            <div class="flow__card">
+                <div class="flow__card-head">
+                    <svg class="flow__card-icon" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 14l2 2 4-4"/></svg>
+                    <h3 class="flow__card-title">Testen</h3>
+                </div>
+                <p class="flow__card-text">Umfassende Analyse deines aktuellen Gesundheits- &amp; Fitnesszustandes &mdash; Körperwerte, Gewohnheiten, Ernährung.</p>
+            </div>
+            <div class="flow__card">
+                <div class="flow__card-head">
+                    <svg class="flow__card-icon" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-9-9"/><path d="M21 3v6h-6"/><path d="M21 3l-9 9"/></svg>
+                    <h3 class="flow__card-title">Analysieren</h3>
+                </div>
+                <p class="flow__card-text">Datenbasierte Auswertung für maßgeschneiderte Anpassungen deines Ernährungs- und Trainingsplans.</p>
+            </div>
+            <div class="flow__card">
+                <div class="flow__card-head">
+                    <svg class="flow__card-icon" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+                    <h3 class="flow__card-title">Optimieren</h3>
+                </div>
+                <p class="flow__card-text">Kontinuierliches Feintuning der Strategien für optimale, nachhaltige Ergebnisse &mdash; Woche für Woche besser.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- ═══════════ ÜBER PATRICK ═══════════ -->
+<section class="section" id="ueber">
+<div class="container">
+    <div class="about__grid">
+        <!-- BILD: Professionelles Porträt Patrick im Studio — patrick-portrait.jpg -->
+        <div class="photo-block photo-block--tall">
+            <div class="photo-block__bg" style="background:url('images/patrick-portrait.jpg') top center/cover"><span class="photo-block__label">Foto: Patrick Detta</span></div>
+            <div class="photo-block__overlay"></div>
+            <span class="photo-block__caption">Patrick Detta &bull; Dein Coach aus Freiburg</span>
+        </div>
+        <div>
+            <p class="section-label">Über mich</p>
+            <h2 class="section-title">Warum ich weiß,<br><em>was du durchmachst.</em></h2>
+            <p class="section-desc" style="margin-bottom:1rem">Ich bin Patrick Detta aus Freiburg &mdash; und ich habe selbst erlebt, wie es ist, als Unternehmer keine Zeit für den eigenen Körper zu haben.</p>
+            <p style="font-size:.92rem;color:var(--gray-400);line-height:1.75;margin-bottom:1rem">Genau deshalb habe ich ein System entwickelt, das speziell für vielbeschäftigte Selbstständige und Führungskräfte funktioniert: effizient, alltagstauglich und nachhaltig.</p>
+            <p style="font-size:.92rem;color:var(--gray-400);line-height:1.75">Keine leeren Versprechungen. Keine Crash-Diäten. Sondern ein Weg, der funktioniert &mdash; weil er für deine Realität gebaut ist.</p>
+            <div class="about__stats">
+                <div><div class="about__stat-num">200+</div><div class="about__stat-label">Kunden betreut</div></div>
+                <div><div class="about__stat-num">10+</div><div class="about__stat-label">Jahre Erfahrung</div></div>
+                <div><div class="about__stat-num">98%</div><div class="about__stat-label">Weiterempfehlung</div></div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- ═══════════ TESTIMONIALS (LIGHT) ═══════════ -->
+<section class="section section--light">
+<div class="container">
+    <div class="text-center">
+        <p class="section-label">Kundenstimmen</p>
+        <h2 class="section-title">Was meine Kunden <em>sagen.</em></h2>
+    </div>
+    <!-- Google-Badge -->
+    <div style="display:flex;align-items:center;justify-content:center;gap:.6rem;margin-bottom:2rem">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        <span style="font-size:.85rem;font-weight:600;color:#6b7280">Verifizierte Google-Bewertungen</span>
+        <div style="display:flex;gap:2px">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <span style="font-size:.85rem;font-weight:700;color:#111827">4.9</span>
+    </div>
+    <div class="testi__grid">
+        <!-- Jan -->
+        <div class="testi-card">
+            <span class="testi-card__quote">&ldquo;</span>
+            <div class="testi-card__stars">
+                <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testi-card__text">„Patrick ist ein kompetenter und sympathischer Coach, der mich Schritt für Schritt auf meinem Weg begleitet. Er ist immer erreichbar, motiviert und gibt genau die Unterstützung, die man braucht. Dank seiner fachlichen Expertise und empathischen Art macht das Erreichen meiner Ziele nicht nur Fortschritte, sondern auch Spaß. Absolut empfehlenswert!"</p>
+            <div class="testi-card__author">
+                <div class="testi-card__avatar">J</div>
+                <div>
+                    <div class="testi-card__name">Jan</div>
+                    <div class="testi-card__role" style="display:flex;align-items:center;gap:4px">
+                        <svg viewBox="0 0 24 24" width="11" height="11"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.47 2.09 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Google-Bewertung
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Patrick (Kunde) -->
+        <div class="testi-card">
+            <span class="testi-card__quote">&ldquo;</span>
+            <div class="testi-card__stars">
+                <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testi-card__text">„Ich bin absolut begeistert von der Betreuung! Hier geht es nicht nur um Training, sondern um ein ganzheitliches Konzept: Ernährung, Erholung, Mindset &mdash; alles wird abgedeckt. Besonders beeindruckt hat mich die Flexibilität: Urlaub, Krankheit oder spontane Änderungen? Kein Problem! Ich habe nicht nur abgenommen, sondern auch an Fitness und Kraft hinzugewonnen. Klare Empfehlung!"</p>
+            <div class="testi-card__author">
+                <div class="testi-card__avatar">P</div>
+                <div>
+                    <div class="testi-card__name">Patrick</div>
+                    <div class="testi-card__role" style="display:flex;align-items:center;gap:4px">
+                        <svg viewBox="0 0 24 24" width="11" height="11"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.47 2.09 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Google-Bewertung
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Jamal -->
+        <div class="testi-card">
+            <span class="testi-card__quote">&ldquo;</span>
+            <div class="testi-card__stars">
+                <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testi-card__text">„Patrick ist ein sehr kompetenter Trainer, der mit viel Hingabe und Empathie auf individuelle Trainingsziele und Probleme eingeht. Ich hatte zwei Einheiten mit unterschiedlichen Schwerpunkten bei ihm und hab sehr viel wertvollen Input bekommen. Gerne wieder!"</p>
+            <div class="testi-card__author">
+                <div class="testi-card__avatar">Ja</div>
+                <div>
+                    <div class="testi-card__name">Jamal</div>
+                    <div class="testi-card__role" style="display:flex;align-items:center;gap:4px">
+                        <svg viewBox="0 0 24 24" width="11" height="11"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.47 2.09 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Google-Bewertung
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Johannes -->
+        <div class="testi-card">
+            <span class="testi-card__quote">&ldquo;</span>
+            <div class="testi-card__stars">
+                <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testi-card__text">„Patrick ist ein hervorragender Personal Trainer! Seine professionelle und motivierende Art hat mir geholfen, meine Fitnessziele zu erreichen. Er erstellt Trainingspläne, die individuell zusammengestellt sind und sehr knackig sind! Ich kann ihn jedem wärmstens empfehlen, der ernsthaft an seiner Fitness arbeiten möchte und selbst stagniert."</p>
+            <div class="testi-card__author">
+                <div class="testi-card__avatar">Jo</div>
+                <div>
+                    <div class="testi-card__name">Johannes</div>
+                    <div class="testi-card__role" style="display:flex;align-items:center;gap:4px">
+                        <svg viewBox="0 0 24 24" width="11" height="11"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.47 2.09 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Google-Bewertung
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bastian -->
+        <div class="testi-card">
+            <span class="testi-card__quote">&ldquo;</span>
+            <div class="testi-card__stars">
+                <svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testi-card__text">„Ich hatte ein tolles 60-Minuten-Training, gut geplant, individuell abgestimmt auf den persönlichen Bedarf, sinnvolle unterstützende Übungen für andere Sportarten (Tennis) und insgesamt fordernd und motivierend zugleich. So wünscht man sich das!"</p>
+            <div class="testi-card__author">
+                <div class="testi-card__avatar">B</div>
+                <div>
+                    <div class="testi-card__name">Bastian</div>
+                    <div class="testi-card__role" style="display:flex;align-items:center;gap:4px">
+                        <svg viewBox="0 0 24 24" width="11" height="11"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.47 2.09 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Google-Bewertung
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sechste Bewertung — folgt noch -->
+        <div class="testi-card" style="border-style:dashed;opacity:.55;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:.75rem">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none"><circle cx="12" cy="12" r="10" stroke="#d1d5db" stroke-width="1.5" stroke-dasharray="3 2"/><path d="M12 8v8M8 12h8" stroke="#d1d5db" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <div style="font-size:.85rem;color:#9ca3af;line-height:1.6">Weitere Google-Bewertung<br>folgt in Kürze.</div>
+            <div style="display:flex;gap:3px">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#e5e7eb"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#e5e7eb"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#e5e7eb"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#e5e7eb"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#e5e7eb"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- ═══════════ STANDORT FREIBURG ═══════════ -->
+<section class="section" id="standort">
+<div class="container">
+    <div class="standort__grid">
+        <div>
+            <p class="section-label">Unser Standort</p>
+            <h2 class="section-title">Coaching aus dem Herzen von <em>Freiburg.</em></h2>
+            <p class="section-desc" style="margin-bottom:2rem">Von Freiburg aus betreue ich Kunden digital in ganz Deutschland, Österreich und der Schweiz. Persönlich. Individuell. Ergebnisorientiert.</p>
+            <div class="standort__info">
+                <div class="standort__card">
+                    <div class="standort__card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="#E84C3D" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="#E84C3D" stroke-width="2"/></svg></div>
+                    <div><div class="standort__card-title">Freiburg im Breisgau</div><div class="standort__card-text">Unser Büro befindet sich im Herzen von Freiburg &mdash; mit digitaler Betreuung für Kunden überall im DACH-Raum.</div></div>
+                </div>
+                <div class="standort__card">
+                    <div class="standort__card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#E84C3D" stroke-width="2"/></svg></div>
+                    <div><div class="standort__card-title">100% Digital</div><div class="standort__card-text">App-Coaching, Video-Calls und WhatsApp &mdash; alles läuft digital. Du brauchst nicht vor Ort zu sein.</div></div>
+                </div>
+                <div class="standort__card">
+                    <div class="standort__card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20" stroke="#E84C3D" stroke-width="2"/><path d="M12 2a15 15 0 014 10 15 15 0 01-4 10 15 15 0 01-4-10A15 15 0 0112 2z" stroke="#E84C3D" stroke-width="2"/></svg></div>
+                    <div><div class="standort__card-title">DACH-Region</div><div class="standort__card-text">Deutschland, Österreich, Schweiz &mdash; überall erreichbar, immer persönlich.</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="standort__map">
+            <!-- SVG MAP: Deutschland mit Freiburg Marker (geografisch korrekt) -->
+            <svg viewBox="0 0 500 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Schweiz -->
+                <path d="M205,601 L180,591 L153,588 L128,597 L95,602 L71,604 L55,616 L38,632 L25,656 L16,688 L49,711 L60,723 L91,719 L109,731 L140,715 L170,723 L187,707 L195,680 L198,656 L219,640 L199,622 Z" fill="#111111" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <text x="120" y="670" fill="rgba(255,255,255,0.18)" font-family="Inter,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Schweiz</text>
+
+                <!-- Österreich -->
+                <path d="M205,601 L235,622 L273,620 L302,622 L344,613 L377,601 L390,587 L388,547 L414,523 L430,505 L473,517 L511,537 L544,556 L577,587 L560,632 L549,656 L500,672 L475,684 L433,674 L390,684 L354,656 L308,640 L250,644 L219,640 L199,622 Z" fill="#111111" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <text x="430" y="620" fill="rgba(255,255,255,0.18)" font-family="Inter,sans-serif" font-size="11" font-weight="600" text-anchor="middle">Österreich</text>
+
+                <!-- Deutschland (Hauptform, geografisch korrekt) -->
+                <path d="M132,16 L148,24 L195,25 L225,48 L236,60 L275,52 L275,83 L305,91 L340,73 L365,60 L401,52 L414,33 L431,56 L435,79 L457,94 L460,123 L468,157 L480,187 L475,219 L485,262 L499,304 L463,322 L440,338 L398,354 L385,366 L341,380 L340,388 L364,409 L378,441 L401,465 L419,486 L430,505 L414,523 L388,547 L390,587 L377,601 L344,613 L302,622 L273,620 L235,622 L205,601 L180,591 L153,588 L128,597 L95,602 L88,576 L89,558 L92,539 L103,521 L119,505 L77,481 L59,466 L25,448 L25,423 L13,401 L19,376 L7,344 L3,322 L10,289 L44,258 L55,238 L64,216 L63,195 L65,175 L72,149 L73,137 L56,123 L78,110 L123,125 L151,98 L169,96 L171,91 L149,62 L137,46 Z" fill="var(--bg-card)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+
+                <!-- Deutschland Label -->
+                <text x="270" y="320" fill="rgba(255,255,255,0.22)" font-family="Inter,sans-serif" font-size="16" font-weight="700" text-anchor="middle">Deutschland</text>
+
+                <!-- Freiburg Marker (Südwesten, korrekte Position) -->
+                <circle cx="107" cy="565" r="22" fill="rgba(232,76,61,0.1)"/>
+                <circle cx="107" cy="565" r="14" fill="rgba(232,76,61,0.18)"/>
+                <circle cx="107" cy="565" r="7" fill="#E84C3D"/>
+                <circle cx="107" cy="565" r="3.5" fill="white"/>
+
+                <!-- Freiburg Label -->
+                <rect x="122" y="552" width="95" height="26" rx="6" fill="#E84C3D"/>
+                <text x="170" y="569" fill="white" font-family="Phudu,sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">FREIBURG</text>
+                <line x1="114" y1="564" x2="122" y2="564" stroke="#E84C3D" stroke-width="2"/>
+
+                <!-- Pulse animation -->
+                <circle cx="107" cy="565" r="7" fill="none" stroke="#E84C3D" stroke-width="1.5" opacity="0.6">
+                    <animate attributeName="r" values="7;22" dur="2s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.6;0" dur="2s" repeatCount="indefinite"/>
+                </circle>
+            </svg>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- ═══════════ FAQ (LIGHT) ═══════════ -->
+<section class="section section--light" id="faq">
+<div class="container">
+    <div class="text-center">
+        <p class="section-label">Häufige Fragen</p>
+        <h2 class="section-title">Hast du noch <em>Fragen?</em></h2>
+    </div>
+    <div class="faq__list">
+        <div class="faq-item"><div class="faq-item__q">Ich habe extrem wenig Zeit. Funktioniert das trotzdem?<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><div class="faq-item__a"><p>Ja! Mein System ist speziell für Unternehmer mit 60+ Stunden Wochen entwickelt. Du brauchst keine Stunden im Gym. Alles passt sich deinem Kalender an.</p></div></div>
+        <div class="faq-item"><div class="faq-item__q">Muss ich hungern oder auf alles verzichten?<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><div class="faq-item__a"><p>Nein. Mein Ansatz basiert auf flexibler Ernährung ohne Verbote. Du wirst keine Minute das Gefühl haben, auf Diät zu sein &mdash; auch nicht beim Business-Dinner.</p></div></div>
+        <div class="faq-item"><div class="faq-item__q">Wie schnell sehe ich Ergebnisse?<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><div class="faq-item__a"><p>Die meisten Kunden sehen in 2-3 Wochen spürbare Veränderungen. In 10 Wochen sind bis zu 12kg realistisch &mdash; gesund und nachhaltig.</p></div></div>
+        <div class="faq-item"><div class="faq-item__q">Brauche ich ein Fitnessstudio?<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><div class="faq-item__a"><p>Nicht unbedingt. Wir passen das Training an deine Situation an &mdash; ob Gym, Home-Workout oder sogar im Hotel auf Geschäftsreise.</p></div></div>
+        <div class="faq-item"><div class="faq-item__q">Was kostet das Erstgespräch?<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><div class="faq-item__a"><p>Nichts. Das Erstgespräch ist 100% kostenlos und unverbindlich. Wir schauen gemeinsam, ob und wie ich dir helfen kann.</p></div></div>
+        <div class="faq-item"><div class="faq-item__q">Was unterscheidet dich von anderen Coaches?<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><div class="faq-item__a"><p>Ich arbeite ausschließlich mit Unternehmern und Führungskräften. Ich verstehe deinen Alltag, deine Herausforderungen und deinen Zeitdruck. Mein System ist für deine Realität gebaut.</p></div></div>
+        <div class="faq-item"><div class="faq-item__q">Was passiert nach dem Coaching?<svg class="faq-item__icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><div class="faq-item__a"><p>Mein Ziel ist, dass du danach eigenständig weitermachen kannst. Du lernst Gewohnheiten, die ein Leben lang bleiben. Kein Jojo-Effekt.</p></div></div>
+    </div>
+</div>
+</section>
+
+<!-- ═══════════ 3 SCHRITTE ═══════════ -->
+<section class="section">
+<div class="container">
+    <div class="text-center">
+        <p class="section-label">In 3 Schritten starten</p>
+        <h2 class="section-title">So einfach geht's <em>los.</em></h2>
+    </div>
+    <div class="steps__grid">
+        <div class="step-card"><div class="step-card__num">1</div><h3 class="step-card__title">Erstgespräch buchen</h3><p class="step-card__text">Klicke auf den Button und wähle deinen Wunschtermin. Kostenlos und unverbindlich.</p></div>
+        <div class="step-card"><div class="step-card__num">2</div><h3 class="step-card__title">Strategie-Call</h3><p class="step-card__text">Wir analysieren deine Situation und entwickeln deinen individuellen Fahrplan.</p></div>
+        <div class="step-card"><div class="step-card__num">3</div><h3 class="step-card__title">Durchstarten</h3><p class="step-card__text">Du startest sofort &mdash; mit App, persönlichem Coach und 24/7 Support.</p></div>
+    </div>
+</div>
+</section>
+
+<!-- ═══════════ FINAL CTA ═══════════ -->
+<section class="final-cta" id="kontakt">
+<div class="container">
+    <!-- BILDER: 3 kleine Impressionen — Patrick im Studio, mit Kunden, beim Coaching -->
+    <div class="cta-image-strip">
+        <div class="cta-image-strip__item"><div class="img-placeholder" style="background:url('images/cta-1.jpg') center/cover">Patrick im Studio</div></div>
+        <div class="cta-image-strip__item"><div class="img-placeholder" style="background:url('images/cta-2.jpg') center/cover">Patrick mit Kunde</div></div>
+        <div class="cta-image-strip__item"><div class="img-placeholder" style="background:url('images/cta-3.jpg') center/cover">Patrick beim Coaching</div></div>
+    </div>
+    <div class="final-cta__box">
+        <div class="final-cta__box-overlay"></div>
+        <div class="final-cta__box-vignette"></div>
+        <div class="final-cta__box-grid"></div>
+        <h2 class="final-cta__title">Bereit, deinen Bauch<br><em>endgültig loszuwerden?</em></h2>
+        <p class="final-cta__desc">Buche jetzt dein kostenloses Erstgespräch. Kein Risiko, kein Druck &mdash; nur ein ehrliches Gespräch über deinen Weg.</p>
+        <a href="formular.html" class="btn btn--red" style="position:relative;z-index:1">Jetzt Erstgespräch vereinbaren <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+</div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="footer">
+<div class="container">
+    <div class="footer__inner">
+        <div class="footer__logo"><span>PATRICK</span><span>DETTA</span></div>
+        <div class="footer__links">
+            <a href="#" class="footer__link">Impressum</a>
+            <a href="#" class="footer__link">Datenschutz</a>
+            <a href="#" class="footer__link">AGB</a>
+            <a href="#" class="footer__link">Kontakt</a>
+        </div>
+    </div>
+    <div class="footer__copy">
+        <a href="https://www.schmidtke-gmbh.de" target="_blank" rel="noopener" class="footer__credit">
+            <span style="display:block;font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-600);margin-bottom:.1rem">Marketing von</span>
+            <span class="schmidtke-logo" style="display:inline-flex;align-items:baseline;font-family:'SK Modernist',system-ui,-apple-system,sans-serif;font-size:1.1rem;font-weight:700;color:#fff;letter-spacing:-.3px;line-height:1">schmidtke<span style="display:inline-block;width:5px;height:5px;background:#c9a96e;border-radius:1px;margin-left:2px;vertical-align:baseline;position:relative;top:-1px"></span></span>
+        </a>
+        <span>&copy; 2026 Patrick Detta. Alle Rechte vorbehalten.</span>
+    </div>
+</div>
+</footer>
+
+<!-- ═══════════ FLOATING CTA ═══════════ -->
+<div class="floating-cta" id="floatingCta">
+    <a href="formular.html">Jetzt Erstgespräch sichern <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+</div>
+
+<script>
+// Bento cards: trigger animations on scroll for touch/mobile devices
+(function(){
+    const isMobile=window.matchMedia('(hover:none)').matches||window.matchMedia('(max-width:768px)').matches;
+    if(!isMobile)return;
+    const cards=document.querySelectorAll('.bento__card');
+    if(!cards.length)return;
+    const obs=new IntersectionObserver(entries=>{
+        entries.forEach(e=>{
+            e.target.classList.toggle('bento__card--active',e.isIntersecting);
+        });
+    },{threshold:0.4});
+    cards.forEach(c=>obs.observe(c));
+})();
+
+// Final CTA scale-in on scroll
+(function(){
+    const ctaBox=document.querySelector('.final-cta__box');
+    if(!ctaBox)return;
+    const obs=new IntersectionObserver(entries=>{
+        entries.forEach(e=>{
+            ctaBox.classList.toggle('final-cta__box--visible',e.isIntersecting);
+        });
+    },{threshold:0.25});
+    obs.observe(ctaBox);
+})();
+
+// VSL play overlay
+function vslPlay(){
+    const overlay=document.getElementById('vslOverlay');
+    const player=document.getElementById('vslPlayer');
+    if(overlay)overlay.classList.add('hero__vsl-overlay--hidden');
+    if(player&&player.play)player.play();
+}
+const h=document.getElementById('header');
+const fc=document.getElementById('floatingCta');
+const vsl=document.querySelector('.hero__vsl');
+let lastY=0;
+window.addEventListener('scroll',()=>{
+    const y=window.scrollY;
+    h.classList.toggle('scrolled',y>20);
+    // Show floating CTA after scrolling past hero (600px) and hide near footer
+    const docH=document.documentElement.scrollHeight;
+    const winH=window.innerHeight;
+    const nearBottom=y+winH>docH-300;
+    fc.classList.toggle('visible',y>600&&!nearBottom);
+    // VSL scroll zoom: scale from 1 to 1.05 over first 400px of scroll
+    if(vsl){const p=Math.min(y/400,1);vsl.style.setProperty('--vsl-scale',1+p*0.05)}
+    lastY=y;
+});
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})}));
+document.querySelectorAll('.faq-item__q').forEach(q=>q.addEventListener('click',function(){const i=this.parentElement;document.querySelectorAll('.faq-item').forEach(x=>{if(x!==i)x.classList.remove('active')});i.classList.toggle('active')}));
+// Compare3 scroll animation: hero zooms in, side cols slide behind hero
+(function(){
+    const wrap=document.querySelector('.compare3-wrap');
+    if(!wrap)return;
+    const hero=wrap.querySelector('.compare3__col--hero');
+    const left=wrap.querySelector('.compare3__col--left');
+    const right=wrap.querySelector('.compare3__col--right');
+    if(!hero||!left||!right)return;
+    function update(){
+        const rect=wrap.getBoundingClientRect();
+        const wh=window.innerHeight;
+        // p goes from 0 (section enters viewport) to 1 (section center at viewport center)
+        const raw=(wh-rect.top)/(wh+rect.height*0.5);
+        const p=Math.max(0,Math.min(raw,1));
+        // Hero: scale from 0.96 to 1.0
+        const heroScale=0.96+p*0.04;
+        hero.style.transform='scale('+heroScale+')';
+        // Side cols: start normal, then translate inward and fade slightly
+        const sideShift=p*25; // max 25px inward
+        const sideOpacity=1-p*0.2; // max 0.8 opacity
+        left.style.transform='translateX('+sideShift+'px)';
+        left.style.opacity=sideOpacity;
+        right.style.transform='translateX(-'+sideShift+'px)';
+        right.style.opacity=sideOpacity;
+    }
+    // Only run when section is near viewport
+    let isVisible=false;
+    const obs=new IntersectionObserver(entries=>{
+        isVisible=entries[0].isIntersecting;
+        if(isVisible)requestAnimationFrame(update);
+    },{threshold:0,rootMargin:'100px'});
+    obs.observe(wrap);
+    window.addEventListener('scroll',()=>{if(isVisible)requestAnimationFrame(update)},{passive:true});
+})();
+
+// Counter animation on scroll (IntersectionObserver)
+document.querySelectorAll('.counter').forEach(el=>{
+    let animated=false;
+    const obs=new IntersectionObserver(entries=>{
+        entries.forEach(e=>{
+            if(e.isIntersecting&&!animated){
+                animated=true;
+                const target=parseInt(el.dataset.target);
+                const dur=1800;
+                const start=performance.now();
+                function tick(now){
+                    const p=Math.min((now-start)/dur,1);
+                    const ease=1-Math.pow(1-p,3);
+                    el.textContent=Math.round(ease*target);
+                    if(p<1)requestAnimationFrame(tick);
+                }
+                requestAnimationFrame(tick);
+            }
+        });
+    },{threshold:0.5});
+    obs.observe(el);
+});
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danke! | Patrick Detta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Phudu:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+    --red:#E84C3D;--red-hover:#D4402F;--red-glow:rgba(232,76,61,.15);
+    --teal:#2DD4BF;--teal-glow:rgba(45,212,191,.12);
+    --bg:#0A0A0A;--bg-card:#151515;
+    --border:rgba(255,255,255,.06);
+    --white:#fff;--gray-400:#9ca3af;--gray-500:#6b7280;--gray-600:#4b5563;
+    --font-display:'Phudu',cursive;--font-body:'Inter',sans-serif;
+    --radius:12px;--radius-lg:20px;--radius-xl:28px;
+    --ease:cubic-bezier(.4,0,.2,1);
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px}
+body{font-family:var(--font-body);background:var(--bg);color:var(--gray-400);line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem 1.5rem}
+
+/* ── Logo ── */
+.ty-logo{text-align:center;margin-bottom:2.5rem}
+.ty-logo a{font-family:var(--font-display);font-size:1.4rem;font-weight:900;text-decoration:none;letter-spacing:.5px}
+.ty-logo a span:first-child{color:var(--white)}
+.ty-logo a span:last-child{color:var(--red)}
+
+/* ── Card ── */
+.ty-card{width:100%;max-width:680px;background:linear-gradient(135deg,var(--bg-card) 0%,rgba(232,76,61,.05) 100%);border:1px solid rgba(232,76,61,.1);border-radius:var(--radius-xl);padding:3.5rem 2.5rem;text-align:center;position:relative;overflow:hidden}
+.ty-card::before{content:'';position:absolute;top:-100px;right:-100px;width:300px;height:300px;background:var(--red);opacity:.03;border-radius:50%}
+.ty-card::after{content:'';position:absolute;bottom:-60px;left:-60px;width:200px;height:200px;background:var(--teal);opacity:.03;border-radius:50%}
+
+/* ── Check icon ── */
+.ty-icon{margin-bottom:1.5rem;position:relative;z-index:1;animation:tyPop .5s var(--ease)}
+@keyframes tyPop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+
+/* ── Typography ── */
+.ty-title{font-family:var(--font-display);font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900;color:var(--white);margin-bottom:.75rem;position:relative;z-index:1;line-height:1.2}
+.ty-title em{font-style:normal;color:var(--red)}
+.ty-subtitle{font-size:1rem;color:var(--gray-400);margin-bottom:.4rem;position:relative;z-index:1}
+.ty-cta-text{font-size:1.15rem;color:var(--white);font-weight:600;margin-bottom:2rem;position:relative;z-index:1}
+
+/* ── Calendly embed ── */
+.ty-calendly{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius-lg);padding:0;overflow:hidden;position:relative;z-index:1;min-height:500px}
+.ty-calendly-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:500px;color:var(--gray-500);font-size:.9rem;gap:.75rem}
+.ty-calendly-placeholder svg{width:48px;height:48px;stroke:var(--gray-600);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.ty-calendly-placeholder code{font-size:.72rem;color:var(--gray-600);background:rgba(255,255,255,.04);padding:.3rem .8rem;border-radius:6px;margin-top:.25rem}
+
+/* ── Steps indicator ── */
+.ty-steps{display:flex;align-items:center;justify-content:center;gap:.75rem;margin-bottom:2.5rem;position:relative;z-index:1}
+.ty-step{display:flex;align-items:center;gap:.4rem;font-size:.78rem;color:var(--gray-500)}
+.ty-step__num{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:.7rem}
+.ty-step--done .ty-step__num{background:var(--teal);color:var(--white)}
+.ty-step--done{color:var(--teal)}
+.ty-step--current .ty-step__num{background:var(--red);color:var(--white);box-shadow:0 0 12px var(--red-glow)}
+.ty-step--current{color:var(--white);font-weight:600}
+.ty-step__line{width:32px;height:2px;border-radius:2px;background:rgba(255,255,255,.08)}
+.ty-step__line--done{background:var(--teal)}
+
+/* ── Back link ── */
+.ty-back{text-align:center;margin-top:1.5rem}
+.ty-back a{font-size:.85rem;color:var(--gray-500);text-decoration:none;transition:.2s}
+.ty-back a:hover{color:var(--white)}
+
+@media(max-width:640px){
+    body{padding:1.5rem 1rem}
+    .ty-card{padding:2.5rem 1.5rem}
+    .ty-calendly-placeholder{min-height:400px}
+    .ty-steps{gap:.5rem}
+    .ty-step span:not(.ty-step__num){display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="ty-logo">
+    <a href="index.html"><span>PATRICK</span> <span>DETTA</span></a>
+</div>
+
+<div class="ty-card">
+    <!-- Steps indicator -->
+    <div class="ty-steps">
+        <div class="ty-step ty-step--done">
+            <span class="ty-step__num"><svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1 5l3.5 3.5L11 1" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span>Formular</span>
+        </div>
+        <div class="ty-step__line ty-step__line--done"></div>
+        <div class="ty-step ty-step--current">
+            <span class="ty-step__num">2</span>
+            <span>Termin buchen</span>
+        </div>
+    </div>
+
+    <!-- Check icon -->
+    <div class="ty-icon">
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+            <circle cx="32" cy="32" r="32" fill="rgba(45,212,191,.12)"/>
+            <path d="M20 32l8 8 16-20" stroke="#2DD4BF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+
+    <!-- Personalized heading -->
+    <h1 class="ty-title" id="ty-name">Fast geschafft!</h1>
+    <p class="ty-subtitle" style="font-size:1.1rem;color:var(--white);font-weight:600">Jetzt fehlt nur noch ein Schritt:</p>
+    <p class="ty-cta-text">Buche deinen kostenlosen Termin, damit wir gemeinsam starten können.</p>
+
+    <!-- Was passiert im Erstgespräch -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2rem;position:relative;z-index:1;text-align:center">
+        <div style="padding:1rem .75rem">
+            <div style="font-family:var(--font-display);font-size:1.5rem;font-weight:900;color:var(--red);margin-bottom:.4rem">1</div>
+            <div style="font-weight:600;color:var(--white);font-size:.85rem;margin-bottom:.25rem">Analyse</div>
+            <p style="font-size:.75rem;color:var(--gray-500);line-height:1.5">Wo stehst du gerade? Was hast du probiert? Was hat nicht funktioniert?</p>
+        </div>
+        <div style="padding:1rem .75rem">
+            <div style="font-family:var(--font-display);font-size:1.5rem;font-weight:900;color:var(--red);margin-bottom:.4rem">2</div>
+            <div style="font-weight:600;color:var(--white);font-size:.85rem;margin-bottom:.25rem">Strategie</div>
+            <p style="font-size:.75rem;color:var(--gray-500);line-height:1.5">Dein individueller Unternehmer-Fahrplan mit konkreten Schritten.</p>
+        </div>
+        <div style="padding:1rem .75rem">
+            <div style="font-family:var(--font-display);font-size:1.5rem;font-weight:900;color:var(--red);margin-bottom:.4rem">3</div>
+            <div style="font-weight:600;color:var(--white);font-size:.85rem;margin-bottom:.25rem">Klarheit</div>
+            <p style="font-size:.75rem;color:var(--gray-500);line-height:1.5">Was du ändern musst, was du beibehalten kannst und wie viel Zeit du wirklich brauchst.</p>
+        </div>
+    </div>
+
+    <!-- Calendly embed area -->
+    <div class="ty-calendly" id="calendly-container">
+        <!-- PLATZHALTER: Ersetze den Inhalt dieses Divs mit dem Calendly-Widget -->
+        <div class="ty-calendly-placeholder">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <p>Calendly-Kalender wird hier eingebettet.</p>
+            <code>&lt;!-- Calendly inline widget begin --&gt;<br>
+&lt;div class="calendly-inline-widget" data-url="https://calendly.com/DEIN-LINK" style="min-width:320px;height:630px;"&gt;&lt;/div&gt;<br>
+&lt;script src="https://assets.calendly.com/assets/external/widget.js" async&gt;&lt;/script&gt;<br>
+&lt;!-- Calendly inline widget end --&gt;</code>
+        </div>
+    </div>
+</div>
+
+<div class="ty-back">
+    <a href="index.html">&larr; Zurück zur Startseite</a>
+</div>
+
+<script>
+// Read name from URL param or sessionStorage
+(function(){
+    const params=new URLSearchParams(window.location.search);
+    let name=params.get('name')||'';
+    if(!name){try{name=sessionStorage.getItem('pd_name')||'';}catch(e){}}
+    if(name){
+        document.getElementById('ty-name').innerHTML=name+', <em>fast geschafft!</em>';
+        document.title=name+', dein Termin wartet! | Patrick Detta';
+    }
+})();
+</script>
+</body>
+</html>
