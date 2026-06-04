@@ -111,6 +111,20 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--gray-400);lin
         <p class="form-header__desc">Beantworte kurz ein paar Fragen &mdash; dauert nur 60 Sekunden.</p>
     </div>
 
+    <!-- Netlify Forms: echtes Formular mit hidden fields -->
+    <form id="netlifyForm" name="erstgespraech" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/danke.html" style="display:none">
+        <input type="hidden" name="form-name" value="erstgespraech">
+        <input type="hidden" name="bot-field">
+        <input type="hidden" name="name" id="nf-name">
+        <input type="hidden" name="alter" id="nf-age">
+        <input type="hidden" name="telefon" id="nf-phone">
+        <input type="hidden" name="email" id="nf-email">
+        <input type="hidden" name="personal-training-erfahrung" id="nf-pt">
+        <input type="hidden" name="erreichbarkeit" id="nf-reach">
+        <input type="hidden" name="ziele" id="nf-goals">
+        <input type="hidden" name="wunsch" id="nf-wish">
+    </form>
+
     <div class="msf" id="msfForm">
         <!-- Progress dots -->
         <div class="msf__progress">
@@ -331,20 +345,25 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--gray-400);lin
             goals:[...document.querySelectorAll('#msf-goals .msf__check--selected')].map(c=>c.textContent.trim()),
             wish:document.getElementById('msf-wish').value.trim()
         };
-        // Daten absenden (Webhook) — Weiterleitung passiert unabhängig davon
+
         const firstName=data.name.split(' ')[0];
         try{sessionStorage.setItem('pd_name',firstName);}catch(e){}
 
-        // TODO: Webhook-URL hier einfügen (z.B. Make/Zapier/n8n)
-        // Die Daten werden IMMER gesendet, auch wenn der Nutzer danach keinen Termin bucht
-        const webhookUrl='DEIN_WEBHOOK_URL'; // ← Hier deine URL eintragen
-        if(webhookUrl!=='DEIN_WEBHOOK_URL'){
-            fetch(webhookUrl,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)}).catch(()=>{});
-        }
-        console.log('Form submission:',data);
+        // Netlify Forms: Daten in versteckte Felder schreiben und absenden
+        document.getElementById('nf-name').value=data.name;
+        document.getElementById('nf-age').value=data.age;
+        document.getElementById('nf-phone').value=data.phone;
+        document.getElementById('nf-email').value=data.email;
+        document.getElementById('nf-pt').value=data.pt;
+        document.getElementById('nf-reach').value=data.reach;
+        document.getElementById('nf-goals').value=data.goals.join(', ');
+        document.getElementById('nf-wish').value=data.wish;
 
-        // Sofort weiterleiten — Webhook läuft im Hintergrund
-        window.location.href='danke.html?name='+encodeURIComponent(firstName);
+        // Per fetch an Netlify senden, dann weiterleiten
+        const formData=new FormData(document.getElementById('netlifyForm'));
+        fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(formData).toString()})
+        .then(()=>{window.location.href='danke.html?name='+encodeURIComponent(firstName);})
+        .catch(()=>{window.location.href='danke.html?name='+encodeURIComponent(firstName);});
     };
 
     // Allow Enter key to advance
