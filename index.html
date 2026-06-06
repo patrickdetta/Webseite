@@ -794,14 +794,22 @@ ul{list-style:none}
     .section-desc{margin-left:auto;margin-right:auto}
 
     /* Grids */
-    .problems__grid,.transforms__grid,.steps__grid,.compare,.compare3,.bento,.bento--bottom,.flow__cards,.scheitern__grid{grid-template-columns:1fr}
-    .testi-columns{grid-template-columns:repeat(2,1fr);max-height:600px}
+    .problems__grid,.transforms__grid,.steps__grid,.compare,.compare3,.bento,.bento--bottom,.flow__cards,.scheitern__grid{grid-template-columns:1fr!important}
+    .testi-columns{grid-template-columns:repeat(2,1fr)!important;max-height:600px}
     .testi-col--3{display:none}
-    .videos__grid{grid-template-columns:1fr}
+    .videos__grid{grid-template-columns:1fr!important}
     .about-gallery{grid-template-columns:1fr!important}
     .about-gallery>div{aspect-ratio:16/10!important}
-    .cta-image-strip{grid-template-columns:1fr!important}
-    .cta-image-strip{gap:.75rem}
+    .cta-image-strip{grid-template-columns:1fr!important;gap:.75rem}
+    .standort__grid{grid-template-columns:1fr!important}
+    .about__grid{grid-template-columns:1fr!important}
+    .compare3{grid-template-columns:1fr!important}
+    .scheitern__intro{grid-template-columns:1fr!important}
+
+    /* Inline-Style Overrides für Mobile */
+    div[style*="grid-template-columns:repeat(3"]{grid-template-columns:1fr!important}
+    div[style*="grid-template-columns:1.2fr"]{grid-template-columns:1fr!important}
+    div[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
     .scheitern__intro{grid-template-columns:1fr;gap:2rem;text-align:center}
     .scheitern__intro .section-desc{margin-left:auto;margin-right:auto}
     .scheitern__card{padding:1.5rem}
@@ -1452,24 +1460,29 @@ ul{list-style:none}
                     <text x="30" y="163" fill="rgba(255,255,255,.2)" font-size="8" text-anchor="end" font-family="Inter">0</text>
                     <text x="30" y="83" fill="rgba(255,255,255,.2)" font-size="8" text-anchor="end" font-family="Inter">50</text>
                     <!-- Bars -->
-                    <rect class="bento-bar bento-bar--1" x="55" y="120" width="28" height="40" rx="4" fill="#E84C3D"/>
-                    <rect class="bento-bar bento-bar--2" x="93" y="95" width="28" height="65" rx="4" fill="#2DD4BF"/>
-                    <rect class="bento-bar bento-bar--3" x="131" y="140" width="28" height="20" rx="4" fill="rgba(255,255,255,.12)"/>
-                    <rect class="bento-bar bento-bar--4" x="169" y="110" width="28" height="50" rx="4" fill="#E84C3D"/>
-                    <rect class="bento-bar bento-bar--5" x="207" y="115" width="28" height="45" rx="4" fill="#2DD4BF"/>
-                    <rect class="bento-bar bento-bar--6" x="245" y="105" width="28" height="55" rx="4" fill="#E84C3D"/>
+                    <!-- Mo: Protein + Kohlenhydrate + Fett -->
+                    <rect class="bento-bar bento-bar--1" x="45" y="120" width="20" height="40" rx="3" fill="#E84C3D"/>
+                    <rect class="bento-bar bento-bar--2" x="67" y="95" width="20" height="65" rx="3" fill="#2DD4BF"/>
+                    <rect class="bento-bar" x="89" y="135" width="20" height="25" rx="3" fill="rgba(255,255,255,.15)"/>
+                    <!-- Di -->
+                    <rect class="bento-bar bento-bar--3" x="120" y="110" width="20" height="50" rx="3" fill="#E84C3D"/>
+                    <rect class="bento-bar bento-bar--4" x="142" y="100" width="20" height="60" rx="3" fill="#2DD4BF"/>
+                    <rect class="bento-bar" x="164" y="140" width="20" height="20" rx="3" fill="rgba(255,255,255,.15)"/>
+                    <!-- Mi -->
+                    <rect class="bento-bar bento-bar--5" x="195" y="115" width="20" height="45" rx="3" fill="#E84C3D"/>
+                    <rect class="bento-bar bento-bar--6" x="217" y="105" width="20" height="55" rx="3" fill="#2DD4BF"/>
+                    <rect class="bento-bar" x="239" y="130" width="20" height="30" rx="3" fill="rgba(255,255,255,.15)"/>
                     <!-- Labels -->
-                    <text x="69" y="175" fill="rgba(255,255,255,.15)" font-size="7" text-anchor="middle" font-family="Inter">Mo</text>
-                    <text x="107" y="175" fill="rgba(255,255,255,.15)" font-size="7" text-anchor="middle" font-family="Inter">Di</text>
-                    <text x="145" y="175" fill="rgba(255,255,255,.15)" font-size="7" text-anchor="middle" font-family="Inter">Mi</text>
-                    <text x="183" y="175" fill="rgba(255,255,255,.15)" font-size="7" text-anchor="middle" font-family="Inter">Do</text>
-                    <text x="221" y="175" fill="rgba(255,255,255,.15)" font-size="7" text-anchor="middle" font-family="Inter">Fr</text>
-                    <text x="259" y="175" fill="rgba(255,255,255,.15)" font-size="7" text-anchor="middle" font-family="Inter">Sa</text>
+                    <text x="75" y="175" fill="rgba(255,255,255,.15)" font-size="7" text-anchor="middle" font-family="Inter">Mo</text>
+                    <text x="150" y="175" fill="rgba(255,255,255,.15)" font-size="7" text-anchor="middle" font-family="Inter">Di</text>
+                    <text x="225" y="175" fill="rgba(255,255,255,.15)" font-size="7" text-anchor="middle" font-family="Inter">Mi</text>
                     <!-- Legend -->
-                    <rect x="55" y="15" width="8" height="8" rx="2" fill="#E84C3D"/>
-                    <text x="68" y="22" fill="rgba(255,255,255,.3)" font-size="8" font-family="Inter">Protein</text>
-                    <rect x="110" y="15" width="8" height="8" rx="2" fill="#2DD4BF"/>
-                    <text x="123" y="22" fill="rgba(255,255,255,.3)" font-size="8" font-family="Inter">Kohlenhydrate</text>
+                    <rect x="40" y="15" width="8" height="8" rx="2" fill="#E84C3D"/>
+                    <text x="53" y="22" fill="rgba(255,255,255,.3)" font-size="8" font-family="Inter">Protein</text>
+                    <rect x="100" y="15" width="8" height="8" rx="2" fill="#2DD4BF"/>
+                    <text x="113" y="22" fill="rgba(255,255,255,.3)" font-size="8" font-family="Inter">Kohlenhydrate</text>
+                    <rect x="185" y="15" width="8" height="8" rx="2" fill="rgba(255,255,255,.2)"/>
+                    <text x="198" y="22" fill="rgba(255,255,255,.3)" font-size="8" font-family="Inter">Fett</text>
                 </svg>
             </div>
             <div class="bento__body">
@@ -1541,7 +1554,7 @@ ul{list-style:none}
                     <!-- Label pill top center -->
                     <rect x="62" y="8" width="76" height="24" rx="12" fill="rgba(45,212,191,.1)" stroke="rgba(45,212,191,.15)" stroke-width="1"/>
                     <circle cx="79" cy="20" r="3.5" fill="#2DD4BF"/>
-                    <text x="90" y="24" fill="#2DD4BF" font-size="9" font-weight="600" font-family="Inter">Sleep</text>
+                    <text x="90" y="24" fill="#2DD4BF" font-size="9" font-weight="600" font-family="Inter">Schlaf</text>
                     <!-- Gauge background arc (full semicircle) -->
                     <path d="M35 110 A65 65 0 0 1 165 110" stroke="rgba(255,255,255,.06)" stroke-width="14" stroke-linecap="round" fill="none"/>
                     <!-- Gauge colored arc — starts at score 60 (20% of 50-100 range), hover to score 90 (80%) -->
@@ -1555,7 +1568,7 @@ ul{list-style:none}
                     <text class="bento-score-bad" x="100" y="100" fill="#E84C3D" font-size="32" font-weight="800" text-anchor="middle" font-family="Phudu,cursive">60</text>
                     <!-- Score: 90 (hover, green/good) -->
                     <text class="bento-score-good" x="100" y="100" fill="#2DD4BF" font-size="32" font-weight="800" text-anchor="middle" font-family="Phudu,cursive">90</text>
-                    <text x="100" y="118" fill="rgba(255,255,255,.3)" font-size="9" text-anchor="middle" font-family="Inter">Sleep Score</text>
+                    <text x="100" y="118" fill="rgba(255,255,255,.3)" font-size="9" text-anchor="middle" font-family="Inter">Schlaf-Score</text>
                 </svg>
             </div>
             <div class="bento__body">
