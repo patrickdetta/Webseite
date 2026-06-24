@@ -673,6 +673,19 @@ ul{list-style:none}
 .testi-card__google svg{width:11px;height:11px;flex-shrink:0}
 /* Kein Pause bei Hover — Spalten laufen immer weiter */
 
+/* ── VIDEO TESTIMONIAL ── */
+.vtesti{display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:center}
+.vtesti__video{position:relative;border-radius:var(--radius-xl);overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.vtesti__info{display:flex;flex-direction:column;gap:.25rem}
+.vtesti__quote-mark{font-family:var(--font-display);font-size:4rem;line-height:1;color:var(--red);opacity:.25;margin-bottom:-.5rem}
+.vtesti__quote{font-size:1.05rem;line-height:1.7;color:var(--gray-400);font-style:italic;border-left:3px solid var(--red);padding-left:1.25rem;margin-bottom:1.25rem}
+.vtesti__result{display:flex;align-items:center;gap:.6rem;background:rgba(45,212,191,.08);border:1px solid rgba(45,212,191,.15);border-radius:var(--radius);padding:.75rem 1rem;margin-bottom:1.25rem;width:fit-content}
+.vtesti__result span{font-family:var(--font-display);font-weight:700;font-size:1rem;color:var(--teal)}
+.vtesti__author{display:flex;align-items:center;gap:.75rem}
+.vtesti__avatar{width:44px;height:44px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:.85rem;color:var(--white);flex-shrink:0}
+.vtesti__name{font-weight:700;color:var(--white);font-size:.95rem}
+.vtesti__role{font-size:.8rem;color:var(--gray-500)}
+
 /* ── STANDORT MAP ── */
 .standort__grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center;margin-top:2rem}
 .standort__map{position:relative;overflow:hidden}
@@ -757,7 +770,7 @@ ul{list-style:none}
     .bento--bottom{grid-template-columns:1fr 1fr}
     .process-step,.process-step:nth-child(even){grid-template-columns:1fr;direction:ltr}
     .process-step:nth-child(even)>*{direction:ltr}
-    .about__grid,.standort__grid{grid-template-columns:1fr}
+    .about__grid,.standort__grid,.vtesti{grid-template-columns:1fr}
     .scheitern__intro{grid-template-columns:1fr;gap:2rem;text-align:center}
     .scheitern__intro .section-desc{margin-left:auto;margin-right:auto}
     .section-title,.section-label{text-align:center}
@@ -801,6 +814,8 @@ ul{list-style:none}
     .about-gallery{grid-template-columns:1fr!important}
     .about-gallery>div{aspect-ratio:16/10!important}
     .cta-image-strip{grid-template-columns:1fr!important;gap:.75rem}
+    .vtesti{grid-template-columns:1fr!important;gap:1.5rem}
+    .vtesti__quote{font-size:.95rem}
     .standort__grid{grid-template-columns:1fr!important}
     .about__grid{grid-template-columns:1fr!important}
     .compare3{grid-template-columns:1fr!important}
@@ -2101,6 +2116,39 @@ ul{list-style:none}
         </div>
 
     </div><!-- /testi-columns -->
+</div>
+</section>
+
+<!-- ═══════════ VIDEO TESTIMONIAL – Felix Rudi ═══════════ -->
+<section class="section" id="video-testimonial">
+<div class="container">
+    <div class="text-center" style="margin-bottom:2.5rem">
+        <p class="section-label">Kundenstimme im Video</p>
+        <h2 class="section-title">Felix erzählt von <em>seiner Transformation.</em></h2>
+    </div>
+    <div class="vtesti">
+        <div class="vtesti__video">
+            <script src="https://fast.wistia.com/embed/cckxu4zltw.js" async type="module"></script>
+            <style>wistia-player[media-id='cckxu4zltw']:not(:defined){background:center/contain no-repeat url('https://fast.wistia.com/embed/medias/cckxu4zltw/swatch');display:block;filter:blur(5px);padding-top:56.25%}</style>
+            <wistia-player media-id="cckxu4zltw" aspect="1.7777777777777777" style="width:100%;border-radius:var(--radius-xl);overflow:hidden"></wistia-player>
+        </div>
+        <div class="vtesti__info">
+            <div class="vtesti__quote-mark">&ldquo;</div>
+            <blockquote class="vtesti__quote">Patrick hat's geschafft, dass ich ohne meinen Alltag ändern zu müssen alles in meinen bestehenden Alltag integrieren konnte — sodass ich erfolgreich abnehmen konnte und das Gewicht gut halte.</blockquote>
+            <div class="vtesti__result">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--teal)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>&minus;8 kg &mdash; nachhaltig gehalten</span>
+            </div>
+            <div class="vtesti__author">
+                <div class="vtesti__avatar">FR</div>
+                <div>
+                    <div class="vtesti__name">Felix Rudi</div>
+                    <div class="vtesti__role">Selbstständiger Vermögensberater</div>
+                </div>
+            </div>
+            <a href="formular.html" class="btn btn--primary" style="margin-top:1.5rem">Kostenloses Erstgespräch sichern <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+    </div>
 </div>
 </section>
 
