@@ -306,8 +306,9 @@ ul{list-style:none}
 .hero__eyebrow::before{content:'';width:6px;height:6px;background:var(--red);border-radius:50%;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 .hero__headline-badge{display:inline;background:rgba(45,212,191,.12);border-radius:6px;padding:.05em .3em;color:var(--teal);box-decoration-break:clone;-webkit-box-decoration-break:clone}
-.hero__br{display:none}
-.hero__title{font-family:var(--font-display);font-size:clamp(2.4rem,4.5vw,3.6rem);font-weight:900;line-height:1.05;color:var(--white);margin-bottom:1.25rem}
+.hero__title{font-family:var(--font-display);font-size:clamp(2.4rem,4.5vw,3.6rem);font-weight:900;line-height:1.1;color:var(--white);margin-bottom:1.25rem}
+.hero__title--mobile{display:none}
+.hero__title--desktop{display:block}
 .hero__title em{font-style:normal;color:var(--red);display:block;font-size:clamp(1.1rem,2.2vw,1.6rem);font-weight:700;margin-top:.75rem;letter-spacing:.5px}
 .hero__sub{font-size:1rem;color:var(--gray-400);line-height:1.7;margin-bottom:1.5rem}
 .hero__actions{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1.5rem}
@@ -783,7 +784,8 @@ ul{list-style:none}
     .hero__vsl{aspect-ratio:16/9}
     .hero__eyebrow{display:inline-flex;margin-left:auto;margin-right:auto}
     .hero__title{text-align:center}
-    .hero__br{display:block}
+    .hero__title--desktop{display:none}
+    .hero__title--mobile{display:block;font-size:clamp(1.8rem,7vw,2.6rem);line-height:1.15}
     .hero__sub{text-align:center}
     .hero__actions{flex-direction:column;align-items:center}
     .hero__proof{justify-content:center}
@@ -796,8 +798,15 @@ ul{list-style:none}
 
     /* Grids */
     .problems__grid,.transforms__grid,.steps__grid,.compare,.compare3,.bento,.bento--bottom,.flow__cards,.scheitern__grid{grid-template-columns:1fr!important}
-    .testi-columns{grid-template-columns:repeat(2,1fr)!important;max-height:600px}
-    .testi-col--3{display:none}
+    /* Testimonials — horizontaler Swipe auf Mobil */
+    .testi-columns{display:flex!important;overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory;gap:1rem;max-height:none;padding-bottom:1rem;mask-image:none;-webkit-mask-image:none}
+    .testi-col{display:contents}
+    .testi-col--3{display:contents}
+    .testi-col [aria-hidden="true"]{display:none}
+    .testi-card{min-width:280px;max-width:85vw;scroll-snap-align:start;flex-shrink:0;animation:none!important}
+    .testi-columns::-webkit-scrollbar{height:4px}
+    .testi-columns::-webkit-scrollbar-track{background:rgba(0,0,0,.05);border-radius:4px}
+    .testi-columns::-webkit-scrollbar-thumb{background:rgba(232,76,61,.3);border-radius:4px}
     .videos__grid{grid-template-columns:1fr!important}
     .about-gallery{grid-template-columns:1fr!important}
     .about-gallery>div{aspect-ratio:16/10!important}
@@ -981,8 +990,14 @@ ul{list-style:none}
     <div class="hero__inner">
         <div class="hero__content">
             <div class="hero__eyebrow">Für Selbstständige und Führungskräfte</div>
-            <h1 class="hero__title">
-                Wie du mit nur <span class="hero__headline-badge">20 Min</span> am Tag <br class="hero__br">bis zu <span class="hero__headline-badge">2&nbsp;kg</span> pro Monat abnimmst
+            <!-- Desktop headline -->
+            <h1 class="hero__title hero__title--desktop">
+                Wie du mit nur <span class="hero__headline-badge">20 Min</span> am Tag<br>bis zu <span class="hero__headline-badge">2&nbsp;kg</span> pro Monat abnimmst
+                <em>— ohne dein Business zu vernachlässigen.</em>
+            </h1>
+            <!-- Mobile headline -->
+            <h1 class="hero__title hero__title--mobile">
+                Mit nur <span class="hero__headline-badge">20&nbsp;Min</span> am Tag<br>bis zu <span class="hero__headline-badge">2&nbsp;kg</span> pro Monat abnehmen
                 <em>— ohne dein Business zu vernachlässigen.</em>
             </h1>
             <p class="hero__sub">Mehr Energie den ganzen Tag, mentaler Fokus statt Mittagstief, erholsamer Schlaf &mdash; und mit Leichtigkeit deine Bestform erreichen. Vor Ort in Freiburg oder flexibel per Online-Coaching.</p>
